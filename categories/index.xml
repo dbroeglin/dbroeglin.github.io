@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Even - A super concise theme for Hugo</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>All rights reserved.</copyright>
+    
+	<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DSL</title>
+      <link>http://localhost:1313/categories/dsl/</link>
+      <pubDate>Fri, 16 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/dsl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programmation</title>
+      <link>http://localhost:1313/categories/programmation/</link>
+      <pubDate>Fri, 16 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/programmation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protocol</title>
+      <link>http://localhost:1313/categories/protocol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/protocol/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ruby</title>
+      <link>http://localhost:1313/categories/ruby/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/ruby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SS7</title>
+      <link>http://localhost:1313/categories/ss7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/ss7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala</title>
+      <link>http://localhost:1313/categories/scala/</link>
+      <pubDate>Fri, 16 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/scala/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

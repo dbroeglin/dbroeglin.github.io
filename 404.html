@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Even - A super concise theme for Hugo</title>
+  <title>404 page not found - Even - A super concise theme for Hugo</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -28,9 +28,7 @@
 <meta name="generator" content="Hugo 0.43" />
 
 
-<link rel="canonical" href="http://localhost:1313/" />
-<link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="Even - A super concise theme for Hugo" />
-  <link href="http://localhost:1313/index.xml" rel="feed" type="application/rss+xml" title="Even - A super concise theme for Hugo" />
+<link rel="canonical" href="" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -50,14 +48,10 @@
 
 
 
-<meta property="og:title" content="Even - A super concise theme for Hugo" />
+<meta property="og:title" content="404 Page not found" />
 <meta property="og:description" content="Hugo theme even example site." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
-
-
-
-<meta property="og:updated_time" content="2010-04-16T00:00:00&#43;00:00"/>
+<meta property="og:url" content="" />
 
 
 
@@ -68,11 +62,15 @@
 
 
 
-<meta itemprop="name" content="Even - A super concise theme for Hugo">
+
+
+
+
+<meta itemprop="name" content="404 Page not found">
 <meta itemprop="description" content="Hugo theme even example site.">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Even - A super concise theme for Hugo"/>
+<meta name="twitter:title" content="404 Page not found"/>
 <meta name="twitter:description" content="Hugo theme even example site."/>
 
 <!--[if lte IE 9]>
@@ -134,76 +132,20 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           
-  <section id="posts" class="posts">
-    
-    
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/2010/04/scala-days-2010/">Scala Days 2010</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2010-04-16 </span>
-      <div class="post-category">
-          
-            <a href="/categories/scala/"> Scala </a>
-          
-            <a href="/categories/programmation/"> Programmation </a>
-          
-            <a href="/categories/dsl/"> DSL </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Les 15 et 16 avril 2010 j&rsquo;ai eu la chance d&rsquo;assister aux Scala Days à Lausanne (Suisse). Il s&rsquo;agissait d&rsquo;une conférence autour du langage de programmation multi-paradigme Scala, ses applications et son futur.
-Scala est un langage de programmation conçu à l&rsquo;École Polytechnique Fédérale de Lausanne. Il intègre les paradigmes de programmation fonctionnelle avec ceux de la programmation orientée objet. Son typage est statique mais le système d&rsquo;inférence de types du compilateur permet de se passer, dans un grand nombre de cas, de la lourdeur habituellement imposée par cette catégorie de langages.
-    </div>
-    <div class="read-more">
-      <a href="/2010/04/scala-days-2010/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/1/01/analyser-des-paquets-isup-avec-wireshark/">Analyser des paquets ISUP avec Wireshark</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 0001-01-01 </span>
-      <div class="post-category">
-          
-            <a href="/categories/ruby/"> Ruby </a>
-          
-            <a href="/categories/protocol/"> Protocol </a>
-          
-            <a href="/categories/ss7/"> SS7 </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      {{ page.accroche }}
-Le décor Wireshark est sans aucun doute le plus connu et le plus complet des outils d&rsquo;analyse de trafic libres. Aussi, lorsque j&rsquo;ai eu à trouver un outil pour analyser du trafic ISUP, je me suis tout de suite tourné vers lui. Effectivement, Wireshark peut analyser des messages ISUP, l&rsquo;ennui c&rsquo;est que Wireshark analyse du SIGTRAN (SS7 over IP) et les traces dont je dispose sont des dumps textes dans des fichiers de journaux.
-    </div>
-    <div class="read-more">
-      <a href="/1/01/analyser-des-paquets-isup-avec-wireshark/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-  </section>
-  
-  <nav class="pagination">
-    
-    
-  </nav>
+<div class="not-found">
+  <h1 class="error-emoji"></h1>
+  <p class="error-text">/* 404 page not found. */</p>
+  <p class="error-link"><a href="/">↑ Back Home ↑</a></p>
+</div>
+<script>
+  var errorEmojiContainer = document.getElementsByClassName('error-emoji')[0];
+  var emojiArray = [
+    '\\(o_o)/', '(o^^)o', '(˚Δ˚)b', '(^-^*)', '(≥o≤)', '(^_^)b', '(·_·)',
+    '(=\'X\'=)', '(>_<)', '(;-;)', '\\(^Д^)/',
+  ];
+  var errorEmoji = emojiArray[Math.floor(Math.random() * emojiArray.length)];
+  errorEmojiContainer.appendChild(document.createTextNode(errorEmoji));
+</script>
 
         </div>
         
