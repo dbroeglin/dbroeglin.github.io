@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>All rights reserved.</copyright>
-    <lastBuildDate>Fri, 16 Apr 2010 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Jun 2010 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Analyser des paquets ISUP avec Wireshark</title>
+      <link>http://localhost:1313/2010/06/analyser-des-paquets-isup-avec-wireshark/</link>
+      <pubDate>Sun, 06 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2010/06/analyser-des-paquets-isup-avec-wireshark/</guid>
+      <description>Il y a quelques temps j&amp;rsquo;ai eu à analyser des journaux contenant des messages ISUP avec Wireshark. L&amp;rsquo;opération n&amp;rsquo;est pas triviale, mais une fois comprise elle est relativement simple à mettre en oeuvre dans un script. Le suite de cette article décrit les étapes nécessaires à la transformation d&amp;rsquo;un message MTP en un message SIGTRAN pour permettre son analyse par Wireshark.
+Le décor Wireshark est sans aucun doute le plus connu et le plus complet des outils d&amp;rsquo;analyse de trafic libres.</description>
+    </item>
     
     <item>
       <title>Scala Days 2010</title>
@@ -20,16 +30,6 @@
       <guid>http://localhost:1313/2010/04/scala-days-2010/</guid>
       <description>Les 15 et 16 avril 2010 j&amp;rsquo;ai eu la chance d&amp;rsquo;assister aux Scala Days à Lausanne (Suisse). Il s&amp;rsquo;agissait d&amp;rsquo;une conférence autour du langage de programmation multi-paradigme Scala, ses applications et son futur.
 Scala est un langage de programmation conçu à l&amp;rsquo;École Polytechnique Fédérale de Lausanne. Il intègre les paradigmes de programmation fonctionnelle avec ceux de la programmation orientée objet. Son typage est statique mais le système d&amp;rsquo;inférence de types du compilateur permet de se passer, dans un grand nombre de cas, de la lourdeur habituellement imposée par cette catégorie de langages.</description>
-    </item>
-    
-    <item>
-      <title>Analyser des paquets ISUP avec Wireshark</title>
-      <link>http://localhost:1313/1/01/analyser-des-paquets-isup-avec-wireshark/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/1/01/analyser-des-paquets-isup-avec-wireshark/</guid>
-      <description>{{ page.accroche }}
-Le décor Wireshark est sans aucun doute le plus connu et le plus complet des outils d&amp;rsquo;analyse de trafic libres. Aussi, lorsque j&amp;rsquo;ai eu à trouver un outil pour analyser du trafic ISUP, je me suis tout de suite tourné vers lui. Effectivement, Wireshark peut analyser des messages ISUP, l&amp;rsquo;ennui c&amp;rsquo;est que Wireshark analyse du SIGTRAN (SS7 over IP) et les traces dont je dispose sont des dumps textes dans des fichiers de journaux.</description>
     </item>
     
   </channel>
