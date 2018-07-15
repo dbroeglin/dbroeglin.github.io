@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>All rights reserved.</copyright>
-    <lastBuildDate>Sun, 06 Jun 2010 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Nov 2010 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JMXTerm : JMX en ligne de commande</title>
+      <link>http://localhost:1313/2010/11/jmxterm--jmx-en-ligne-de-commande/</link>
+      <pubDate>Sat, 13 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2010/11/jmxterm--jmx-en-ligne-de-commande/</guid>
+      <description>Il est parfois utile de pouvoir consulter les informations de supervision d&amp;rsquo;une machine virtuelle Java qui s&amp;rsquo;exécute sur un serveur distant. Malheureusement, l&amp;rsquo;agent JMX n&amp;rsquo;est pas toujours configuré pour un accès distant ou cet accès distant est difficile du fait de la topologie réseau.
+Si le JDK est installé sur la machine distante, il est toujours possible de se connecter au serveur en faisant suivre une session X et de lancer un jconsole directement sur le serveur :</description>
+    </item>
     
     <item>
       <title>Analyser des paquets ISUP avec Wireshark</title>

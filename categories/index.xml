@@ -21,6 +21,24 @@
     </item>
     
     <item>
+      <title>JMX</title>
+      <link>http://localhost:1313/categories/jmx/</link>
+      <pubDate>Sat, 13 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/jmx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monitoring</title>
+      <link>http://localhost:1313/categories/monitoring/</link>
+      <pubDate>Sat, 13 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/monitoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Programmation</title>
       <link>http://localhost:1313/categories/programmation/</link>
       <pubDate>Fri, 16 Apr 2010 00:00:00 +0000</pubDate>
