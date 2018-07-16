@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>All rights reserved.</copyright>
-    <lastBuildDate>Sat, 13 Nov 2010 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Nov 2010 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JMX4R : JMX en Ruby</title>
+      <link>http://localhost:1313/2010/11/jmx4r--jmx-en-ruby/</link>
+      <pubDate>Wed, 24 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2010/11/jmx4r--jmx-en-ruby/</guid>
+      <description>Lorsqu&amp;rsquo;on souhaite superviser et administrer une application Java pendant son exécution la solution qui s&amp;rsquo;impose est JMX. Malheureusement, écrire un client JMX n&amp;rsquo;est pas trivial. Une solution possible est l&amp;rsquo;utilisation de JMX4R une gemme Ruby conçue dans cette optique.
+Dans le billet précédent, j&amp;rsquo;ai présenté JMXTerm, un client JMX en ligne de commande très pratique pour accéder interactivement à JMX. Il a cependant le défaut d&amp;rsquo;être relativement difficile et lourd à automatiser.</description>
+    </item>
     
     <item>
       <title>JMXTerm : JMX en ligne de commande</title>

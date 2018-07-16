@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://localhost:1313/2010/11/jmx4r--jmx-en-ruby/</loc>
+    <lastmod>2010-11-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/2010/11/jmxterm--jmx-en-ligne-de-commande/</loc>
     <lastmod>2010-11-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -38,28 +45,28 @@
   
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2010-11-13T00:00:00+00:00</lastmod>
+    <lastmod>2010-11-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/categories/jmx/</loc>
-    <lastmod>2010-11-13T00:00:00+00:00</lastmod>
+    <lastmod>2010-11-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/categories/monitoring/</loc>
-    <lastmod>2010-11-13T00:00:00+00:00</lastmod>
+    <lastmod>2010-11-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2010-11-13T00:00:00+00:00</lastmod>
+    <lastmod>2010-11-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -80,7 +87,7 @@
   
   <url>
     <loc>http://localhost:1313/categories/ruby/</loc>
-    <lastmod>2010-06-06T00:00:00+00:00</lastmod>
+    <lastmod>2010-11-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
