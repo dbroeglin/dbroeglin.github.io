@@ -98,6 +98,22 @@ Dans le billet précédent, j&rsquo;ai présenté JMXTerm, un client JMX en lign
   <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
 <![endif]-->
 
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eb6c44",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#f5d948"
+    }
+  }
+})});
+</script>
 </head>
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
@@ -261,6 +277,11 @@ app <span style="color:#f92672">=</span> <span style="color:#66d9ef">JMX</span><
       
       <nav class="post-nav">
         
+          <a class="prev" href="/2011/03/debian-squeeze-64-vagrant-base-box/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Debian Squeeze 64 Vagrant Base Box</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
         
           <a class="next" href="/2010/11/jmxterm--jmx-en-ligne-de-commande/">
             <span class="next-text nav-default">JMXTerm : JMX en ligne de commande</span>

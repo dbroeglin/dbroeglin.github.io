@@ -7,10 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>All rights reserved.</copyright>
-    <lastBuildDate>Wed, 24 Nov 2010 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Aug 2011 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Debian Squeeze 64 Vagrant Base Box Upgrade Recipe</title>
+      <link>http://localhost:1313/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/</link>
+      <pubDate>Tue, 09 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/</guid>
+      <description>After building a Vagrant base box, Vagrant and Virtual Box updates incurred lots of upgrades. This article gives a recipe to do that quickly and efficiently.
+Build a new environment mkdir /tmp/upgrade cd /tmp/upgrade vagrant init squeeze64 vagrant up vagrant halt At that point the VM is stoped. Launch it from the Virtual Box GUI and mount the guest tools (Host+D).
+Upgrade Log into the VM through vagrant:
+vagrant ssh Upgrade the OS and the tools:</description>
+    </item>
+    
+    <item>
+      <title>Debian Squeeze 64 Vagrant Base Box</title>
+      <link>http://localhost:1313/2011/03/debian-squeeze-64-vagrant-base-box/</link>
+      <pubDate>Sat, 26 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2011/03/debian-squeeze-64-vagrant-base-box/</guid>
+      <description>Lately I needed to test a project under Debian Squeeze 64 bit. I found several 32 bit boxes but no 64 bits. So I decided to build one of my own.
+Quickstart To get up and running you just need to:
+gem install vagrant vagrant box add squeeze64 http://dl.dropbox.com/u/937870/VMs/squeeze64.box vagrant init squeeze64 vagrant up Details The base box has the following characteristics:
+ 275Mb in it&amp;rsquo;s packaged form; 8Gb hard drive; Debian Squeeze with a linux-image-2.</description>
+    </item>
     
     <item>
       <title>JMX4R : JMX en Ruby</title>

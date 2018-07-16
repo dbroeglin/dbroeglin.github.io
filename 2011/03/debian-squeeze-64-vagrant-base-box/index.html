@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Debian Squeeze 64 Vagrant Base Box - Dom&#39;s Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Dominique Broeglin" />
+  <meta name="description" content="Lately I needed to test a project under Debian Squeeze 64 bit. I found several 32 bit boxes but no 64 bits. So I decided to build one of my own.
+Quickstart To get up and running you just need to:
+gem install vagrant vagrant box add squeeze64 http://dl.dropbox.com/u/937870/VMs/squeeze64.box vagrant init squeeze64 vagrant up Details The base box has the following characteristics:
+ 275Mb in it&amp;rsquo;s packaged form; 8Gb hard drive; Debian Squeeze with a linux-image-2." />
+
+  <meta name="keywords" content="Dominique, Broeglin, Blog" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.43" />
+
+
+<link rel="canonical" href="http://localhost:1313/2011/03/debian-squeeze-64-vagrant-base-box/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.2.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="Debian Squeeze 64 Vagrant Base Box" />
+<meta property="og:description" content="Lately I needed to test a project under Debian Squeeze 64 bit. I found several 32 bit boxes but no 64 bits. So I decided to build one of my own.
+Quickstart To get up and running you just need to:
+gem install vagrant vagrant box add squeeze64 http://dl.dropbox.com/u/937870/VMs/squeeze64.box vagrant init squeeze64 vagrant up Details The base box has the following characteristics:
+ 275Mb in it&rsquo;s packaged form; 8Gb hard drive; Debian Squeeze with a linux-image-2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/2011/03/debian-squeeze-64-vagrant-base-box/" />
+
+
+
+<meta property="article:published_time" content="2011-03-26T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2012-05-08T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Debian Squeeze 64 Vagrant Base Box">
+<meta itemprop="description" content="Lately I needed to test a project under Debian Squeeze 64 bit. I found several 32 bit boxes but no 64 bits. So I decided to build one of my own.
+Quickstart To get up and running you just need to:
+gem install vagrant vagrant box add squeeze64 http://dl.dropbox.com/u/937870/VMs/squeeze64.box vagrant init squeeze64 vagrant up Details The base box has the following characteristics:
+ 275Mb in it&rsquo;s packaged form; 8Gb hard drive; Debian Squeeze with a linux-image-2.">
+
+
+<meta itemprop="datePublished" content="2011-03-26T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2011-03-26T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="352">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Debian Squeeze 64 Vagrant Base Box"/>
+<meta name="twitter:description" content="Lately I needed to test a project under Debian Squeeze 64 bit. I found several 32 bit boxes but no 64 bits. So I decided to build one of my own.
+Quickstart To get up and running you just need to:
+gem install vagrant vagrant box add squeeze64 http://dl.dropbox.com/u/937870/VMs/squeeze64.box vagrant init squeeze64 vagrant up Details The base box has the following characteristics:
+ 275Mb in it&rsquo;s packaged form; 8Gb hard drive; Debian Squeeze with a linux-image-2."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eb6c44",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#f5d948"
+    }
+  }
+})});
+</script>
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Dom&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Dom&#39;s Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Debian Squeeze 64 Vagrant Base Box</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2011-03-26 </span>
+        <div class="post-category">
+            
+              <a href="/categories/vagrant/"> Vagrant </a>
+            
+              <a href="/categories/virtual-machine/"> Virtual machine </a>
+            
+              <a href="/categories/linux/"> Linux </a>
+            
+              <a href="/categories/debian/"> Debian </a>
+            
+          </div>
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#quickstart">Quickstart</a></li>
+<li><a href="#details">Details</a></li>
+<li><a href="#recipe">Recipe</a></li>
+<li><a href="#cleanup">Cleanup</a></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<p><em>Lately I needed to test a project under Debian Squeeze 64 bit. I found several 32 bit boxes but no 64 bits. So I decided to build one of my own.</em></p>
+
+<h1 id="quickstart">Quickstart</h1>
+
+<p>To get up and running you just need to:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">gem install vagrant
+vagrant box add squeeze64 http://dl.dropbox.com/u/937870/VMs/squeeze64.box
+vagrant init squeeze64
+vagrant up</code></pre></div>
+
+<h1 id="details">Details</h1>
+
+<p>The base box has the following characteristics:</p>
+
+<ul>
+<li>275Mb in it&rsquo;s packaged form;</li>
+<li>8Gb hard drive;</li>
+<li>Debian Squeeze with a linux-image-2.6.32-5-amd64 kernel;</li>
+<li>fr_CH keyboard layout;</li>
+<li>Debian packaged ruby 1.8;</li>
+<li>Debian packaged puppet 2.6.2-4;</li>
+<li>Chef 0.9.14 installed as a system wide gem;</li>
+<li>VirtualBox Guest Tools 4.1.0r73009;</li>
+</ul>
+
+<h1 id="recipe">Recipe</h1>
+
+<p>For those interrested in the details, the box was built by
+following &ldquo;Vagrant&rsquo;s instructions for creating base boxes&rdquo;: <a href="https://www.vagrantup.com/docs/boxes/base.html">https://www.vagrantup.com/docs/boxes/base.html</a></p>
+
+<h1 id="cleanup">Cleanup</h1>
+
+<p>In order to reduce the packaged VM&rsquo;s size, a little bit of
+cleaning up was required. The following steps where used:</p>
+
+<p>Inside the VM:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo aptitude install zerofree
+sudo apt-get clean
+sudo rm -rf /usr/src/vboxguest*
+sudo rm -rf /usr/share/doc
+sudo find /var/cache -type f -exec rm -rf <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span></code></pre></div>
+
+<p>Then halt the VM with vagrant:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vagrant halt</code></pre></div>
+
+<p>Restart the VM with VirtualBox and log in as root (the root password was set to &lsquo;vagrant&rsquo; during previous steps):</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">init <span style="color:#ae81ff">1</span></code></pre></div>
+
+<p>Type the root password and then:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mount -o remount,ro /dev/sda1
+zerofree /dev/sda1</code></pre></div>
+
+<p><strong>Update (10/12/2011)</strong>: The base box has been updated to <em>Virtual Box Guest Additions</em> v4.1.4 and the latest <em>Debian Squeeze</em> updates.</p>
+
+<p><strong>Update (12/02/2011)</strong>: The base box has been updated to <em>Virtual Box Guest Additions</em> v4.1.6 and the latest <em>Debian Squeeze</em> updates.</p>
+
+<p><strong>Update (02/08/2012)</strong>: The base box has been updated to <em>Virtual Box Guest Additions</em> v4.1.8 and the latest <em>Debian Squeeze</em> updates.</p>
+
+<p><strong>Update (03/25/2012)</strong>: The base box has been updated to <em>Virtual Box Guest Additions</em> v4.1.10, chef 0.10.8 and the latest <em>Debian Squeeze</em> updates.</p>
+
+<p><strong>Update (04/04/2012)</strong>: The base box has been updated to <em>Virtual Box Guest Additions</em> v4.1.12 and the latest <em>Debian Squeeze</em> updates.</p>
+
+<p><strong>Update (29/04/2012)</strong>: The package has been updated to the latest <em>Debian Squeeze</em> updates and the <em>nfs-common</em> package was installed.</p>
+
+<p><strong>Update (05/08/2012)</strong>: The base box has been updated to <em>Virtual Box Guest Additions</em> v4.1.14 and the latest <em>Debian Squeeze</em> updates.</p>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Dominique Broeglin</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2012-05-08</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Debian Squeeze 64 Vagrant Base Box Upgrade Recipe</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/2010/11/jmx4r--jmx-en-ruby/">
+            <span class="next-text nav-default">JMX4R : JMX en Ruby</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'dominiquebroeglin';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2010 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">All rights reserved.</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+
+
+<script type="text/javascript" src="/dist/even.min.js?v=3.2.0"></script>
+
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-16180637-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>
