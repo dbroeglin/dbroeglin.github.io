@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>All rights reserved.</copyright>
-    <lastBuildDate>Tue, 09 Aug 2011 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Feb 2012 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/categories/virtual-machine/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Debian Wheezy 64 Vagrant Base Box</title>
+      <link>http://localhost:1313/2012/02/debian-wheezy-64-vagrant-base-box/</link>
+      <pubDate>Sat, 25 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/02/debian-wheezy-64-vagrant-base-box/</guid>
+      <description>In the same spirit as Debian Squeeze 64 Vagrant Base Box this post describes a new Vagrant base box for Debian Wheezy. Wheezy is currently the unstable version of Debian, meaning the box is a constant work in progress. I will update this post each time the box is upgraded.
+Quickstart To get up and running you just need to:
+gem install vagrant vagrant box add wheezy64 http://dl.dropbox.com/u/937870/VMs/wheezy64.box vagrant init wheezy64 vagrant up Details The base box has the following characteristics:</description>
+    </item>
     
     <item>
       <title>Debian Squeeze 64 Vagrant Base Box Upgrade Recipe</title>
