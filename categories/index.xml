@@ -23,7 +23,7 @@
     <item>
       <title>Debian</title>
       <link>http://localhost:1313/categories/debian/</link>
-      <pubDate>Tue, 09 Aug 2011 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 04 Oct 2011 22:53:00 +0000</pubDate>
       
       <guid>http://localhost:1313/categories/debian/</guid>
       <description></description>
@@ -41,7 +41,7 @@
     <item>
       <title>Linux</title>
       <link>http://localhost:1313/categories/linux/</link>
-      <pubDate>Tue, 09 Aug 2011 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 04 Oct 2011 22:53:00 +0000</pubDate>
       
       <guid>http://localhost:1313/categories/linux/</guid>
       <description></description>
@@ -59,7 +59,7 @@
     <item>
       <title>Network</title>
       <link>http://localhost:1313/categories/network/</link>
-      <pubDate>Wed, 10 Aug 2011 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 04 Oct 2011 22:53:00 +0000</pubDate>
       
       <guid>http://localhost:1313/categories/network/</guid>
       <description></description>
@@ -80,6 +80,15 @@
       <pubDate>Sun, 06 Jun 2010 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/categories/protocol/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>QuickTips</title>
+      <link>http://localhost:1313/categories/quicktips/</link>
+      <pubDate>Tue, 04 Oct 2011 22:53:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/quicktips/</guid>
       <description></description>
     </item>
     
