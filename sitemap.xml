@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://localhost:1313/2011/11/site-de-leglise-de-vezannes/</loc>
+    <lastmod>2011-11-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/2011/10/rebuild-a-customized-official-debian-package/</loc>
     <lastmod>2011-10-04T22:53:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -80,7 +87,14 @@
   
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2011-10-04T22:53:00+00:00</lastmod>
+    <lastmod>2011-11-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/fr/</loc>
+    <lastmod>2011-11-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -115,7 +129,7 @@
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2011-10-04T22:53:00+00:00</lastmod>
+    <lastmod>2011-11-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -185,6 +199,13 @@
   <url>
     <loc>http://localhost:1313/categories/vagrant/</loc>
     <lastmod>2012-05-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/vezannes/</loc>
+    <lastmod>2011-11-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
