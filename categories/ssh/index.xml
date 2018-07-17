@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSH on Dom&#39;s Blog</title>
+    <link>http://localhost:1313/categories/ssh/</link>
+    <description>Recent content in SSH on Dom&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>All rights reserved.</copyright>
+    <lastBuildDate>Wed, 10 Aug 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Utilisation d&#39;un VPN basé sur OpenSSH</title>
+      <link>http://localhost:1313/2011/08/utilisation-dun-vpn-bas%C3%A9-sur-openssh/</link>
+      <pubDate>Wed, 10 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2011/08/utilisation-dun-vpn-bas%C3%A9-sur-openssh/</guid>
+      <description>Habituellement j&amp;rsquo;utilise OpenVPN lorsque j&amp;rsquo;ai besoin d&amp;rsquo;un VPN. Cependant, sur un réseau où seul le Web et le SSH sont autorisés il peut être pratique de monter un VPN avec OpenSSH.
+La méthode présentée ici se concentre sur le montage rapide d&amp;rsquo;un VPN ad-hoc. Le lecteur intéressé par le montage d&amp;rsquo;un VPN dans la durée pourra se référer à Setting up a Layer 3 tunneling VPN with using OpenSSH.</description>
+    </item>
+    
+  </channel>
+</rss>
