@@ -2,42 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby on Dom&#39;s Blog</title>
-    <link>http://localhost:1313/categories/ruby/</link>
+    <link>https://dominique.broeglin.fr/categories/ruby/</link>
     <description>Recent content in Ruby on Dom&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>All rights reserved.</copyright>
     <lastBuildDate>Wed, 07 Mar 2012 22:08:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dominique.broeglin.fr/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using Ruby to find a cycle in a graph of Puppet dependencies</title>
-      <link>http://localhost:1313/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</link>
+      <link>https://dominique.broeglin.fr/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</link>
       <pubDate>Wed, 07 Mar 2012 22:08:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</guid>
+      <guid>https://dominique.broeglin.fr/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</guid>
       <description>Today, I had a small issue while using Puppet. To make it quick: I got a circular dependency in my Puppet recipes and Puppet failed with a verbose but not so helpful message:
 err: Could not apply complete catalog: Found dependency cycles in the following relationships: User[root] =&amp;gt; File[/usr/share/locale/locale.alias], Package[python-setuptools] ... # INSERT TONS of other dependencies here ... try using the &amp;#39;--graph&amp;#39; option and open the &amp;#39;.dot&amp;#39; files in OmniGraffle or GraphViz Of course, I tried the &amp;lsquo;&amp;ndash;graph&amp;rsquo; option but, due to it&amp;rsquo;s size, the generated diagram was anything but readable.</description>
     </item>
     
     <item>
       <title>JMX4R : JMX en Ruby</title>
-      <link>http://localhost:1313/2010/11/jmx4r--jmx-en-ruby/</link>
+      <link>https://dominique.broeglin.fr/2010/11/jmx4r--jmx-en-ruby/</link>
       <pubDate>Wed, 24 Nov 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2010/11/jmx4r--jmx-en-ruby/</guid>
+      <guid>https://dominique.broeglin.fr/2010/11/jmx4r--jmx-en-ruby/</guid>
       <description>Lorsqu&amp;rsquo;on souhaite superviser et administrer une application Java pendant son exécution la solution qui s&amp;rsquo;impose est JMX. Malheureusement, écrire un client JMX n&amp;rsquo;est pas trivial. Une solution possible est l&amp;rsquo;utilisation de JMX4R une gemme Ruby conçue dans cette optique.
 Dans le billet précédent, j&amp;rsquo;ai présenté JMXTerm, un client JMX en ligne de commande très pratique pour accéder interactivement à JMX. Il a cependant le défaut d&amp;rsquo;être relativement difficile et lourd à automatiser.</description>
     </item>
     
     <item>
       <title>Analyser des paquets ISUP avec Wireshark</title>
-      <link>http://localhost:1313/2010/06/analyser-des-paquets-isup-avec-wireshark/</link>
+      <link>https://dominique.broeglin.fr/2010/06/analyser-des-paquets-isup-avec-wireshark/</link>
       <pubDate>Sun, 06 Jun 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2010/06/analyser-des-paquets-isup-avec-wireshark/</guid>
+      <guid>https://dominique.broeglin.fr/2010/06/analyser-des-paquets-isup-avec-wireshark/</guid>
       <description>Il y a quelques temps j&amp;rsquo;ai eu à analyser des journaux contenant des messages ISUP avec Wireshark. L&amp;rsquo;opération n&amp;rsquo;est pas triviale, mais une fois comprise elle est relativement simple à mettre en oeuvre dans un script. Le suite de cette article décrit les étapes nécessaires à la transformation d&amp;rsquo;un message MTP en un message SIGTRAN pour permettre son analyse par Wireshark.
 Le décor Wireshark est sans aucun doute le plus connu et le plus complet des outils d&amp;rsquo;analyse de trafic libres.</description>
     </item>

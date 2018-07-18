@@ -2,42 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>QuickTips on Dom&#39;s Blog</title>
-    <link>http://localhost:1313/categories/quicktips/</link>
+    <link>https://dominique.broeglin.fr/categories/quicktips/</link>
     <description>Recent content in QuickTips on Dom&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>All rights reserved.</copyright>
     <lastBuildDate>Mon, 31 Dec 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/quicktips/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dominique.broeglin.fr/categories/quicktips/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Automating Eclipse tasks through Eclim</title>
-      <link>http://localhost:1313/2012/12/automating-eclipse-tasks-through-eclim/</link>
+      <link>https://dominique.broeglin.fr/2012/12/automating-eclipse-tasks-through-eclim/</link>
       <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2012/12/automating-eclipse-tasks-through-eclim/</guid>
+      <guid>https://dominique.broeglin.fr/2012/12/automating-eclipse-tasks-through-eclim/</guid>
       <description>Lately my day to day work included developing applications with the Play! framework. Play!, in both its 1.x and 2.x versions, is a great framework but its integration with Eclipse is not always easy. One of the most frequent irritant I had, was having to use of dreaded play eclipsify command which helpfully states:
 $ play eclipsify ~ _ _ ~ _ __ | | __ _ _ _| | ~ | &amp;#39;_ \| |/ _&amp;#39; | || |_| ~ | __/|_|\____|\__ (_) ~ |_| |__/ ~ ~ play!</description>
     </item>
     
     <item>
       <title>Using Ruby to find a cycle in a graph of Puppet dependencies</title>
-      <link>http://localhost:1313/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</link>
+      <link>https://dominique.broeglin.fr/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</link>
       <pubDate>Wed, 07 Mar 2012 22:08:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</guid>
+      <guid>https://dominique.broeglin.fr/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</guid>
       <description>Today, I had a small issue while using Puppet. To make it quick: I got a circular dependency in my Puppet recipes and Puppet failed with a verbose but not so helpful message:
 err: Could not apply complete catalog: Found dependency cycles in the following relationships: User[root] =&amp;gt; File[/usr/share/locale/locale.alias], Package[python-setuptools] ... # INSERT TONS of other dependencies here ... try using the &amp;#39;--graph&amp;#39; option and open the &amp;#39;.dot&amp;#39; files in OmniGraffle or GraphViz Of course, I tried the &amp;lsquo;&amp;ndash;graph&amp;rsquo; option but, due to it&amp;rsquo;s size, the generated diagram was anything but readable.</description>
     </item>
     
     <item>
       <title>Rebuild a Customized Official Debian Package</title>
-      <link>http://localhost:1313/2011/10/rebuild-a-customized-official-debian-package/</link>
+      <link>https://dominique.broeglin.fr/2011/10/rebuild-a-customized-official-debian-package/</link>
       <pubDate>Tue, 04 Oct 2011 22:53:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2011/10/rebuild-a-customized-official-debian-package/</guid>
+      <guid>https://dominique.broeglin.fr/2011/10/rebuild-a-customized-official-debian-package/</guid>
       <description>Today, I had a question about Debian package building from a member of my team which was not familiar with the Debian build system. I thought I might as well turn this into a quick tip to anybody wanting to rebuild an official Debian package with a slight change.
 To rebuild the package I&amp;rsquo;m using a pristine Vagrant environment like the one I described in Debian Squeeze 64 Vagrant Base Box.</description>
     </item>

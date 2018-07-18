@@ -30,7 +30,7 @@ As documented by Citrix, NetScaler is not directly available on VirtualBox and m
 <meta name="generator" content="Hugo 0.44" />
 
 
-<link rel="canonical" href="http://localhost:1313/2017/02/automated-netscaler-virtualbox-setup-with-powershell/" />
+<link rel="canonical" href="https://dominique.broeglin.fr/2017/02/automated-netscaler-virtualbox-setup-with-powershell/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -54,7 +54,7 @@ As documented by Citrix, NetScaler is not directly available on VirtualBox and m
 <meta property="og:description" content="For a few months now, I have been working a lot with NetScaler VPX instances. As most of my personal work happens on a MacBook Pro, I was very eager to run NetScaler on VirtualBox. Here are my findings.
 As documented by Citrix, NetScaler is not directly available on VirtualBox and my previous attempts to make it work were unsuccessful. That was until a few days ago when I found this post by Esther Barthel." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/2017/02/automated-netscaler-virtualbox-setup-with-powershell/" />
+<meta property="og:url" content="https://dominique.broeglin.fr/2017/02/automated-netscaler-virtualbox-setup-with-powershell/" />
 
 
 
@@ -195,7 +195,7 @@ window.cookieconsent.initialise({
 
 <p>As documented by Citrix, NetScaler is not directly available on VirtualBox and my previous attempts to make it work were unsuccessful. That was until a few days ago when I found this <a href="http://www.virtues.it/2016/08/howto-netscaler-vpx-on-virtualbox/">post</a> by Esther Barthel. Basically, the trick is to convince NetScaler it is running on ESX by customizing the VirtualBox DMI BIOS settings. Obviously, this way of doing things is not at all supported by Citrix. But that is not an issue in my case as I use VirtualBox only for development and testing.</p>
 
-<p>As I&rsquo;m currently working hard at setting up <em>system tests</em> for the <a href="https://github.com/devblackops/Netscaler">NetScaler PowerShell Module</a>. So, I wanted to see if I could move one step further and create a <a href="https://www.vagrantup.com/docs/boxes/base.html">Vagrant base box</a> that would then neatly integrate with my <a href="http://localhost:1313/2015/11/vagrant-based-windows-lab/">Vagrant based Windows Lab</a>. I created a VirtualBox guest from the NetScaler VPX image for ESX and setup a network configuration compatible with what Vagrant sets up by default:</p>
+<p>As I&rsquo;m currently working hard at setting up <em>system tests</em> for the <a href="https://github.com/devblackops/Netscaler">NetScaler PowerShell Module</a>. So, I wanted to see if I could move one step further and create a <a href="https://www.vagrantup.com/docs/boxes/base.html">Vagrant base box</a> that would then neatly integrate with my <a href="https://dominique.broeglin.fr/2015/11/vagrant-based-windows-lab/">Vagrant based Windows Lab</a>. I created a VirtualBox guest from the NetScaler VPX image for ESX and setup a network configuration compatible with what Vagrant sets up by default:</p>
 
 <ul>
 <li>NSIP: 10.0.2.15</li>
@@ -250,7 +250,7 @@ vagrant up</code></pre></div></p>
 
 <p>It will open the package and create a new <code>NSVPX-11-1</code> VirtualBox virtual machine. By default the virtual machine&rsquo;s MAC address will be <code>00:15:5D:7E:31:00</code> on a NAT type VirtualBox virtual switch. host ports 2022, 2080, and 2443 will be forwarded respectively to ports 22, 80 and 443 on the NetScaler virtual machine.</p>
 
-<p>The resulting script can be found here : <a href="https://gist.github.com/dbroeglin/0c9e512fc4640f2ceda22005650cd417">New-NSVirtualBoxInstance.ps1</a>. Everything works neatly in my <a href="http://localhost:1313/2015/11/vagrant-based-windows-lab/">Vagrant based Windows Lab</a>.</p>
+<p>The resulting script can be found here : <a href="https://gist.github.com/dbroeglin/0c9e512fc4640f2ceda22005650cd417">New-NSVirtualBoxInstance.ps1</a>. Everything works neatly in my <a href="https://dominique.broeglin.fr/2015/11/vagrant-based-windows-lab/">Vagrant based Windows Lab</a>.</p>
 
 <p>A next step, moving forward, could be to enable automatic NSIP provisioning. To be continued&hellip;</p>
 
@@ -333,7 +333,7 @@ that NTP is setup <em>before</em> you install the license file and reboot or the
       <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
       <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
       <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
-  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  <a href="https://dominique.broeglin.fr/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
 <div class="copyright">

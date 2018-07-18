@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dom&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://dominique.broeglin.fr/</link>
     <description>Recent content on Dom&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>All rights reserved.</copyright>
     <lastBuildDate>Tue, 07 Mar 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dominique.broeglin.fr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Automated NetScaler Hyper-V Setup with PowerShell</title>
-      <link>http://localhost:1313/2017/03/automated-netscaler-hyper-v-setup-with-powershell/</link>
+      <link>https://dominique.broeglin.fr/2017/03/automated-netscaler-hyper-v-setup-with-powershell/</link>
       <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2017/03/automated-netscaler-hyper-v-setup-with-powershell/</guid>
+      <guid>https://dominique.broeglin.fr/2017/03/automated-netscaler-hyper-v-setup-with-powershell/</guid>
       <description>Lately, I set up quite a few NetScaler instances on my Windows 10 laptop. Usually my hypervisor of choice is VirtualBox. However, running both VirtualBox and Hyper-V is not possible on Windows 10. As, I needed Hyper-V for other reasons, I had to switch my NetScaler instances to it too.
 In my last post about setting up NetScaler on VirtualBox, I described how NetScaler can be tricked into working on VirtualBox (which is not an hypervisor supported by Citrix!</description>
     </item>
     
     <item>
       <title>Automated NetScaler VirtualBox Setup with PowerShell</title>
-      <link>http://localhost:1313/2017/02/automated-netscaler-virtualbox-setup-with-powershell/</link>
+      <link>https://dominique.broeglin.fr/2017/02/automated-netscaler-virtualbox-setup-with-powershell/</link>
       <pubDate>Sun, 19 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2017/02/automated-netscaler-virtualbox-setup-with-powershell/</guid>
+      <guid>https://dominique.broeglin.fr/2017/02/automated-netscaler-virtualbox-setup-with-powershell/</guid>
       <description>For a few months now, I have been working a lot with NetScaler VPX instances. As most of my personal work happens on a MacBook Pro, I was very eager to run NetScaler on VirtualBox. Here are my findings.
 As documented by Citrix, NetScaler is not directly available on VirtualBox and my previous attempts to make it work were unsuccessful. That was until a few days ago when I found this post by Esther Barthel.</description>
     </item>
     
     <item>
       <title>Vagrant Based Windows Lab</title>
-      <link>http://localhost:1313/2015/11/vagrant-based-windows-lab/</link>
+      <link>https://dominique.broeglin.fr/2015/11/vagrant-based-windows-lab/</link>
       <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2015/11/vagrant-based-windows-lab/</guid>
+      <guid>https://dominique.broeglin.fr/2015/11/vagrant-based-windows-lab/</guid>
       <description>Having a lab handy is a tremendous help when learning Windows administration. This post goes through an easy way to setup your own lab with Vagrant and Packer.
 Update: I used this lab quite a bit since this post and did quite a bit of improvements. Most things remain correct but you will, for instance, have to replace eval-win2012r2-standard-ssh-nocm-1.0.4 with eval-win2012r2-standard-nocm-1.0.4 in the following examples for the lab to work.</description>
     </item>
     
     <item>
       <title>Automating Eclipse tasks through Eclim</title>
-      <link>http://localhost:1313/2012/12/automating-eclipse-tasks-through-eclim/</link>
+      <link>https://dominique.broeglin.fr/2012/12/automating-eclipse-tasks-through-eclim/</link>
       <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2012/12/automating-eclipse-tasks-through-eclim/</guid>
+      <guid>https://dominique.broeglin.fr/2012/12/automating-eclipse-tasks-through-eclim/</guid>
       <description>Lately my day to day work included developing applications with the Play! framework. Play!, in both its 1.x and 2.x versions, is a great framework but its integration with Eclipse is not always easy. One of the most frequent irritant I had, was having to use of dreaded play eclipsify command which helpfully states:
 $ play eclipsify ~ _ _ ~ _ __ | | __ _ _ _| | ~ | &amp;#39;_ \| |/ _&amp;#39; | || |_| ~ | __/|_|\____|\__ (_) ~ |_| |__/ ~ ~ play!</description>
     </item>
     
     <item>
       <title>Using Ruby to find a cycle in a graph of Puppet dependencies</title>
-      <link>http://localhost:1313/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</link>
+      <link>https://dominique.broeglin.fr/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</link>
       <pubDate>Wed, 07 Mar 2012 22:08:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</guid>
+      <guid>https://dominique.broeglin.fr/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</guid>
       <description>Today, I had a small issue while using Puppet. To make it quick: I got a circular dependency in my Puppet recipes and Puppet failed with a verbose but not so helpful message:
 err: Could not apply complete catalog: Found dependency cycles in the following relationships: User[root] =&amp;gt; File[/usr/share/locale/locale.alias], Package[python-setuptools] ... # INSERT TONS of other dependencies here ... try using the &amp;#39;--graph&amp;#39; option and open the &amp;#39;.dot&amp;#39; files in OmniGraffle or GraphViz Of course, I tried the &amp;lsquo;&amp;ndash;graph&amp;rsquo; option but, due to it&amp;rsquo;s size, the generated diagram was anything but readable.</description>
     </item>
     
     <item>
       <title>Debian Wheezy 64 Vagrant Base Box</title>
-      <link>http://localhost:1313/2012/02/debian-wheezy-64-vagrant-base-box/</link>
+      <link>https://dominique.broeglin.fr/2012/02/debian-wheezy-64-vagrant-base-box/</link>
       <pubDate>Sat, 25 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2012/02/debian-wheezy-64-vagrant-base-box/</guid>
+      <guid>https://dominique.broeglin.fr/2012/02/debian-wheezy-64-vagrant-base-box/</guid>
       <description>In the same spirit as Debian Squeeze 64 Vagrant Base Box this post describes a new Vagrant base box for Debian Wheezy. Wheezy is currently the unstable version of Debian, meaning the box is a constant work in progress. I will update this post each time the box is upgraded.
 Quickstart To get up and running you just need to:
 gem install vagrant vagrant box add wheezy64 http://dl.dropbox.com/u/937870/VMs/wheezy64.box vagrant init wheezy64 vagrant up Details The base box has the following characteristics:</description>
@@ -75,39 +75,39 @@ gem install vagrant vagrant box add wheezy64 http://dl.dropbox.com/u/937870/VMs/
     
     <item>
       <title>Site De l&#39;Eglise De Vezannes</title>
-      <link>http://localhost:1313/2011/11/site-de-leglise-de-vezannes/</link>
+      <link>https://dominique.broeglin.fr/2011/11/site-de-leglise-de-vezannes/</link>
       <pubDate>Tue, 22 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2011/11/site-de-leglise-de-vezannes/</guid>
+      <guid>https://dominique.broeglin.fr/2011/11/site-de-leglise-de-vezannes/</guid>
       <description>Ce site relate la restauration de l&amp;rsquo;Eglise Saint Cyr Sainte Julitte.</description>
     </item>
     
     <item>
       <title>Rebuild a Customized Official Debian Package</title>
-      <link>http://localhost:1313/2011/10/rebuild-a-customized-official-debian-package/</link>
+      <link>https://dominique.broeglin.fr/2011/10/rebuild-a-customized-official-debian-package/</link>
       <pubDate>Tue, 04 Oct 2011 22:53:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2011/10/rebuild-a-customized-official-debian-package/</guid>
+      <guid>https://dominique.broeglin.fr/2011/10/rebuild-a-customized-official-debian-package/</guid>
       <description>Today, I had a question about Debian package building from a member of my team which was not familiar with the Debian build system. I thought I might as well turn this into a quick tip to anybody wanting to rebuild an official Debian package with a slight change.
 To rebuild the package I&amp;rsquo;m using a pristine Vagrant environment like the one I described in Debian Squeeze 64 Vagrant Base Box.</description>
     </item>
     
     <item>
       <title>Utilisation d&#39;un VPN basé sur OpenSSH</title>
-      <link>http://localhost:1313/2011/08/utilisation-dun-vpn-bas%C3%A9-sur-openssh/</link>
+      <link>https://dominique.broeglin.fr/2011/08/utilisation-dun-vpn-bas%C3%A9-sur-openssh/</link>
       <pubDate>Wed, 10 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2011/08/utilisation-dun-vpn-bas%C3%A9-sur-openssh/</guid>
+      <guid>https://dominique.broeglin.fr/2011/08/utilisation-dun-vpn-bas%C3%A9-sur-openssh/</guid>
       <description>Habituellement j&amp;rsquo;utilise OpenVPN lorsque j&amp;rsquo;ai besoin d&amp;rsquo;un VPN. Cependant, sur un réseau où seul le Web et le SSH sont autorisés il peut être pratique de monter un VPN avec OpenSSH.
 La méthode présentée ici se concentre sur le montage rapide d&amp;rsquo;un VPN ad-hoc. Le lecteur intéressé par le montage d&amp;rsquo;un VPN dans la durée pourra se référer à Setting up a Layer 3 tunneling VPN with using OpenSSH.</description>
     </item>
     
     <item>
       <title>Debian Squeeze 64 Vagrant Base Box Upgrade Recipe</title>
-      <link>http://localhost:1313/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/</link>
+      <link>https://dominique.broeglin.fr/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/</link>
       <pubDate>Tue, 09 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/</guid>
+      <guid>https://dominique.broeglin.fr/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/</guid>
       <description>After building a Vagrant base box, Vagrant and Virtual Box updates incurred lots of upgrades. This article gives a recipe to do that quickly and efficiently.
 Build a new environment mkdir /tmp/upgrade cd /tmp/upgrade vagrant init squeeze64 vagrant up vagrant halt At that point the VM is stoped. Launch it from the Virtual Box GUI and mount the guest tools (Host+D).
 Upgrade Log into the VM through vagrant:
@@ -116,10 +116,10 @@ vagrant ssh Upgrade the OS and the tools:</description>
     
     <item>
       <title>Debian Squeeze 64 Vagrant Base Box</title>
-      <link>http://localhost:1313/2011/03/debian-squeeze-64-vagrant-base-box/</link>
+      <link>https://dominique.broeglin.fr/2011/03/debian-squeeze-64-vagrant-base-box/</link>
       <pubDate>Sat, 26 Mar 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2011/03/debian-squeeze-64-vagrant-base-box/</guid>
+      <guid>https://dominique.broeglin.fr/2011/03/debian-squeeze-64-vagrant-base-box/</guid>
       <description>Lately I needed to test a project under Debian Squeeze 64 bit. I found several 32 bit boxes but no 64 bits. So I decided to build one of my own.
 Quickstart To get up and running you just need to:
 gem install vagrant vagrant box add squeeze64 http://dl.dropbox.com/u/937870/VMs/squeeze64.box vagrant init squeeze64 vagrant up Details The base box has the following characteristics:
@@ -128,40 +128,40 @@ gem install vagrant vagrant box add squeeze64 http://dl.dropbox.com/u/937870/VMs
     
     <item>
       <title>JMX4R : JMX en Ruby</title>
-      <link>http://localhost:1313/2010/11/jmx4r--jmx-en-ruby/</link>
+      <link>https://dominique.broeglin.fr/2010/11/jmx4r--jmx-en-ruby/</link>
       <pubDate>Wed, 24 Nov 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2010/11/jmx4r--jmx-en-ruby/</guid>
+      <guid>https://dominique.broeglin.fr/2010/11/jmx4r--jmx-en-ruby/</guid>
       <description>Lorsqu&amp;rsquo;on souhaite superviser et administrer une application Java pendant son exécution la solution qui s&amp;rsquo;impose est JMX. Malheureusement, écrire un client JMX n&amp;rsquo;est pas trivial. Une solution possible est l&amp;rsquo;utilisation de JMX4R une gemme Ruby conçue dans cette optique.
 Dans le billet précédent, j&amp;rsquo;ai présenté JMXTerm, un client JMX en ligne de commande très pratique pour accéder interactivement à JMX. Il a cependant le défaut d&amp;rsquo;être relativement difficile et lourd à automatiser.</description>
     </item>
     
     <item>
       <title>JMXTerm : JMX en ligne de commande</title>
-      <link>http://localhost:1313/2010/11/jmxterm--jmx-en-ligne-de-commande/</link>
+      <link>https://dominique.broeglin.fr/2010/11/jmxterm--jmx-en-ligne-de-commande/</link>
       <pubDate>Sat, 13 Nov 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2010/11/jmxterm--jmx-en-ligne-de-commande/</guid>
+      <guid>https://dominique.broeglin.fr/2010/11/jmxterm--jmx-en-ligne-de-commande/</guid>
       <description>Il est parfois utile de pouvoir consulter les informations de supervision d&amp;rsquo;une machine virtuelle Java qui s&amp;rsquo;exécute sur un serveur distant. Malheureusement, l&amp;rsquo;agent JMX n&amp;rsquo;est pas toujours configuré pour un accès distant ou cet accès distant est difficile du fait de la topologie réseau.
 Si le JDK est installé sur la machine distante, il est toujours possible de se connecter au serveur en faisant suivre une session X et de lancer un jconsole directement sur le serveur :</description>
     </item>
     
     <item>
       <title>Analyser des paquets ISUP avec Wireshark</title>
-      <link>http://localhost:1313/2010/06/analyser-des-paquets-isup-avec-wireshark/</link>
+      <link>https://dominique.broeglin.fr/2010/06/analyser-des-paquets-isup-avec-wireshark/</link>
       <pubDate>Sun, 06 Jun 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2010/06/analyser-des-paquets-isup-avec-wireshark/</guid>
+      <guid>https://dominique.broeglin.fr/2010/06/analyser-des-paquets-isup-avec-wireshark/</guid>
       <description>Il y a quelques temps j&amp;rsquo;ai eu à analyser des journaux contenant des messages ISUP avec Wireshark. L&amp;rsquo;opération n&amp;rsquo;est pas triviale, mais une fois comprise elle est relativement simple à mettre en oeuvre dans un script. Le suite de cette article décrit les étapes nécessaires à la transformation d&amp;rsquo;un message MTP en un message SIGTRAN pour permettre son analyse par Wireshark.
 Le décor Wireshark est sans aucun doute le plus connu et le plus complet des outils d&amp;rsquo;analyse de trafic libres.</description>
     </item>
     
     <item>
       <title>Scala Days 2010</title>
-      <link>http://localhost:1313/2010/04/scala-days-2010/</link>
+      <link>https://dominique.broeglin.fr/2010/04/scala-days-2010/</link>
       <pubDate>Fri, 16 Apr 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2010/04/scala-days-2010/</guid>
+      <guid>https://dominique.broeglin.fr/2010/04/scala-days-2010/</guid>
       <description>Les 15 et 16 avril 2010 j&amp;rsquo;ai eu la chance d&amp;rsquo;assister aux Scala Days à Lausanne (Suisse). Il s&amp;rsquo;agissait d&amp;rsquo;une conférence autour du langage de programmation multi-paradigme Scala, ses applications et son futur.
 Scala est un langage de programmation conçu à l&amp;rsquo;École Polytechnique Fédérale de Lausanne. Il intègre les paradigmes de programmation fonctionnelle avec ceux de la programmation orientée objet. Son typage est statique mais le système d&amp;rsquo;inférence de types du compilateur permet de se passer, dans un grand nombre de cas, de la lourdeur habituellement imposée par cette catégorie de langages.</description>
     </item>

@@ -1,273 +1,273 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<?xml-stylesheet type="text/xsl" href="http://localhost:1313/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://dominique.broeglin.fr/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/2017/03/automated-netscaler-hyper-v-setup-with-powershell/</loc>
+    <loc>https://dominique.broeglin.fr/2017/03/automated-netscaler-hyper-v-setup-with-powershell/</loc>
     <lastmod>2017-03-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/2017/02/automated-netscaler-virtualbox-setup-with-powershell/</loc>
+    <loc>https://dominique.broeglin.fr/2017/02/automated-netscaler-virtualbox-setup-with-powershell/</loc>
     <lastmod>2017-02-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/2015/11/vagrant-based-windows-lab/</loc>
+    <loc>https://dominique.broeglin.fr/2015/11/vagrant-based-windows-lab/</loc>
     <lastmod>2015-11-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/2012/12/automating-eclipse-tasks-through-eclim/</loc>
+    <loc>https://dominique.broeglin.fr/2012/12/automating-eclipse-tasks-through-eclim/</loc>
     <lastmod>2012-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</loc>
+    <loc>https://dominique.broeglin.fr/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</loc>
     <lastmod>2012-03-07T22:08:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/2012/02/debian-wheezy-64-vagrant-base-box/</loc>
+    <loc>https://dominique.broeglin.fr/2012/02/debian-wheezy-64-vagrant-base-box/</loc>
     <lastmod>2012-02-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/2011/11/site-de-leglise-de-vezannes/</loc>
+    <loc>https://dominique.broeglin.fr/2011/11/site-de-leglise-de-vezannes/</loc>
     <lastmod>2011-11-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/2011/10/rebuild-a-customized-official-debian-package/</loc>
+    <loc>https://dominique.broeglin.fr/2011/10/rebuild-a-customized-official-debian-package/</loc>
     <lastmod>2011-10-04T22:53:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/2011/08/utilisation-dun-vpn-bas%C3%A9-sur-openssh/</loc>
+    <loc>https://dominique.broeglin.fr/2011/08/utilisation-dun-vpn-bas%C3%A9-sur-openssh/</loc>
     <lastmod>2011-08-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/</loc>
+    <loc>https://dominique.broeglin.fr/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/</loc>
     <lastmod>2012-05-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/2011/03/debian-squeeze-64-vagrant-base-box/</loc>
+    <loc>https://dominique.broeglin.fr/2011/03/debian-squeeze-64-vagrant-base-box/</loc>
     <lastmod>2012-05-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/2010/11/jmx4r--jmx-en-ruby/</loc>
+    <loc>https://dominique.broeglin.fr/2010/11/jmx4r--jmx-en-ruby/</loc>
     <lastmod>2010-11-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/2010/11/jmxterm--jmx-en-ligne-de-commande/</loc>
+    <loc>https://dominique.broeglin.fr/2010/11/jmxterm--jmx-en-ligne-de-commande/</loc>
     <lastmod>2010-11-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/2010/06/analyser-des-paquets-isup-avec-wireshark/</loc>
+    <loc>https://dominique.broeglin.fr/2010/06/analyser-des-paquets-isup-avec-wireshark/</loc>
     <lastmod>2010-06-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/2010/04/scala-days-2010/</loc>
+    <loc>https://dominique.broeglin.fr/2010/04/scala-days-2010/</loc>
     <lastmod>2010-04-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://dominique.broeglin.fr/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/dsl/</loc>
+    <loc>https://dominique.broeglin.fr/categories/dsl/</loc>
     <lastmod>2010-04-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/debian/</loc>
+    <loc>https://dominique.broeglin.fr/categories/debian/</loc>
     <lastmod>2012-02-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://dominique.broeglin.fr/</loc>
     <lastmod>2017-03-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/fr/</loc>
+    <loc>https://dominique.broeglin.fr/categories/fr/</loc>
     <lastmod>2011-11-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/graph/</loc>
+    <loc>https://dominique.broeglin.fr/categories/graph/</loc>
     <lastmod>2012-03-07T22:08:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/jmx/</loc>
+    <loc>https://dominique.broeglin.fr/categories/jmx/</loc>
     <lastmod>2010-11-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/linux/</loc>
+    <loc>https://dominique.broeglin.fr/categories/linux/</loc>
     <lastmod>2012-02-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/monitoring/</loc>
+    <loc>https://dominique.broeglin.fr/categories/monitoring/</loc>
     <lastmod>2010-11-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/network/</loc>
+    <loc>https://dominique.broeglin.fr/categories/network/</loc>
     <lastmod>2011-10-04T22:53:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://dominique.broeglin.fr/post/</loc>
     <lastmod>2017-03-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/programmation/</loc>
+    <loc>https://dominique.broeglin.fr/categories/programmation/</loc>
     <lastmod>2010-04-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/protocol/</loc>
+    <loc>https://dominique.broeglin.fr/categories/protocol/</loc>
     <lastmod>2010-06-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/puppet/</loc>
+    <loc>https://dominique.broeglin.fr/categories/puppet/</loc>
     <lastmod>2012-03-07T22:08:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/quicktips/</loc>
+    <loc>https://dominique.broeglin.fr/categories/quicktips/</loc>
     <lastmod>2012-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/ruby/</loc>
+    <loc>https://dominique.broeglin.fr/categories/ruby/</loc>
     <lastmod>2012-03-07T22:08:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/ss7/</loc>
+    <loc>https://dominique.broeglin.fr/categories/ss7/</loc>
     <lastmod>2010-06-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/ssh/</loc>
+    <loc>https://dominique.broeglin.fr/categories/ssh/</loc>
     <lastmod>2011-08-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/scala/</loc>
+    <loc>https://dominique.broeglin.fr/categories/scala/</loc>
     <lastmod>2010-04-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://dominique.broeglin.fr/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/vpn/</loc>
+    <loc>https://dominique.broeglin.fr/categories/vpn/</loc>
     <lastmod>2011-08-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/vagrant/</loc>
+    <loc>https://dominique.broeglin.fr/categories/vagrant/</loc>
     <lastmod>2012-02-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/vezannes/</loc>
+    <loc>https://dominique.broeglin.fr/categories/vezannes/</loc>
     <lastmod>2011-11-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/virtual-machine/</loc>
+    <loc>https://dominique.broeglin.fr/categories/virtual-machine/</loc>
     <lastmod>2012-02-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>

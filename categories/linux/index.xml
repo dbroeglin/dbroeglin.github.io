@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Dom&#39;s Blog</title>
-    <link>http://localhost:1313/categories/linux/</link>
+    <link>https://dominique.broeglin.fr/categories/linux/</link>
     <description>Recent content in Linux on Dom&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>All rights reserved.</copyright>
     <lastBuildDate>Sat, 25 Feb 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dominique.broeglin.fr/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Debian Wheezy 64 Vagrant Base Box</title>
-      <link>http://localhost:1313/2012/02/debian-wheezy-64-vagrant-base-box/</link>
+      <link>https://dominique.broeglin.fr/2012/02/debian-wheezy-64-vagrant-base-box/</link>
       <pubDate>Sat, 25 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2012/02/debian-wheezy-64-vagrant-base-box/</guid>
+      <guid>https://dominique.broeglin.fr/2012/02/debian-wheezy-64-vagrant-base-box/</guid>
       <description>In the same spirit as Debian Squeeze 64 Vagrant Base Box this post describes a new Vagrant base box for Debian Wheezy. Wheezy is currently the unstable version of Debian, meaning the box is a constant work in progress. I will update this post each time the box is upgraded.
 Quickstart To get up and running you just need to:
 gem install vagrant vagrant box add wheezy64 http://dl.dropbox.com/u/937870/VMs/wheezy64.box vagrant init wheezy64 vagrant up Details The base box has the following characteristics:</description>
@@ -25,20 +25,20 @@ gem install vagrant vagrant box add wheezy64 http://dl.dropbox.com/u/937870/VMs/
     
     <item>
       <title>Rebuild a Customized Official Debian Package</title>
-      <link>http://localhost:1313/2011/10/rebuild-a-customized-official-debian-package/</link>
+      <link>https://dominique.broeglin.fr/2011/10/rebuild-a-customized-official-debian-package/</link>
       <pubDate>Tue, 04 Oct 2011 22:53:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2011/10/rebuild-a-customized-official-debian-package/</guid>
+      <guid>https://dominique.broeglin.fr/2011/10/rebuild-a-customized-official-debian-package/</guid>
       <description>Today, I had a question about Debian package building from a member of my team which was not familiar with the Debian build system. I thought I might as well turn this into a quick tip to anybody wanting to rebuild an official Debian package with a slight change.
 To rebuild the package I&amp;rsquo;m using a pristine Vagrant environment like the one I described in Debian Squeeze 64 Vagrant Base Box.</description>
     </item>
     
     <item>
       <title>Debian Squeeze 64 Vagrant Base Box Upgrade Recipe</title>
-      <link>http://localhost:1313/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/</link>
+      <link>https://dominique.broeglin.fr/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/</link>
       <pubDate>Tue, 09 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/</guid>
+      <guid>https://dominique.broeglin.fr/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/</guid>
       <description>After building a Vagrant base box, Vagrant and Virtual Box updates incurred lots of upgrades. This article gives a recipe to do that quickly and efficiently.
 Build a new environment mkdir /tmp/upgrade cd /tmp/upgrade vagrant init squeeze64 vagrant up vagrant halt At that point the VM is stoped. Launch it from the Virtual Box GUI and mount the guest tools (Host+D).
 Upgrade Log into the VM through vagrant:
@@ -47,10 +47,10 @@ vagrant ssh Upgrade the OS and the tools:</description>
     
     <item>
       <title>Debian Squeeze 64 Vagrant Base Box</title>
-      <link>http://localhost:1313/2011/03/debian-squeeze-64-vagrant-base-box/</link>
+      <link>https://dominique.broeglin.fr/2011/03/debian-squeeze-64-vagrant-base-box/</link>
       <pubDate>Sat, 26 Mar 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2011/03/debian-squeeze-64-vagrant-base-box/</guid>
+      <guid>https://dominique.broeglin.fr/2011/03/debian-squeeze-64-vagrant-base-box/</guid>
       <description>Lately I needed to test a project under Debian Squeeze 64 bit. I found several 32 bit boxes but no 64 bits. So I decided to build one of my own.
 Quickstart To get up and running you just need to:
 gem install vagrant vagrant box add squeeze64 http://dl.dropbox.com/u/937870/VMs/squeeze64.box vagrant init squeeze64 vagrant up Details The base box has the following characteristics:

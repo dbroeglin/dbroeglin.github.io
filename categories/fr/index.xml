@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FR on Dom&#39;s Blog</title>
-    <link>http://localhost:1313/categories/fr/</link>
+    <link>https://dominique.broeglin.fr/categories/fr/</link>
     <description>Recent content in FR on Dom&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>All rights reserved.</copyright>
     <lastBuildDate>Tue, 22 Nov 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/fr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dominique.broeglin.fr/categories/fr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Site De l&#39;Eglise De Vezannes</title>
-      <link>http://localhost:1313/2011/11/site-de-leglise-de-vezannes/</link>
+      <link>https://dominique.broeglin.fr/2011/11/site-de-leglise-de-vezannes/</link>
       <pubDate>Tue, 22 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2011/11/site-de-leglise-de-vezannes/</guid>
+      <guid>https://dominique.broeglin.fr/2011/11/site-de-leglise-de-vezannes/</guid>
       <description>Ce site relate la restauration de l&amp;rsquo;Eglise Saint Cyr Sainte Julitte.</description>
     </item>
     

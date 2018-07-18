@@ -2,192 +2,192 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Dom&#39;s Blog</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://dominique.broeglin.fr/categories/</link>
     <description>Recent content in Categories on Dom&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>All rights reserved.</copyright>
     
-	<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dominique.broeglin.fr/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DSL</title>
-      <link>http://localhost:1313/categories/dsl/</link>
+      <link>https://dominique.broeglin.fr/categories/dsl/</link>
       <pubDate>Fri, 16 Apr 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/dsl/</guid>
+      <guid>https://dominique.broeglin.fr/categories/dsl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Debian</title>
-      <link>http://localhost:1313/categories/debian/</link>
+      <link>https://dominique.broeglin.fr/categories/debian/</link>
       <pubDate>Sat, 25 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/debian/</guid>
+      <guid>https://dominique.broeglin.fr/categories/debian/</guid>
       <description></description>
     </item>
     
     <item>
       <title>FR</title>
-      <link>http://localhost:1313/categories/fr/</link>
+      <link>https://dominique.broeglin.fr/categories/fr/</link>
       <pubDate>Tue, 22 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/fr/</guid>
+      <guid>https://dominique.broeglin.fr/categories/fr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Graph</title>
-      <link>http://localhost:1313/categories/graph/</link>
+      <link>https://dominique.broeglin.fr/categories/graph/</link>
       <pubDate>Wed, 07 Mar 2012 22:08:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/graph/</guid>
+      <guid>https://dominique.broeglin.fr/categories/graph/</guid>
       <description></description>
     </item>
     
     <item>
       <title>JMX</title>
-      <link>http://localhost:1313/categories/jmx/</link>
+      <link>https://dominique.broeglin.fr/categories/jmx/</link>
       <pubDate>Wed, 24 Nov 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/jmx/</guid>
+      <guid>https://dominique.broeglin.fr/categories/jmx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/categories/linux/</link>
+      <link>https://dominique.broeglin.fr/categories/linux/</link>
       <pubDate>Sat, 25 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/linux/</guid>
+      <guid>https://dominique.broeglin.fr/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Monitoring</title>
-      <link>http://localhost:1313/categories/monitoring/</link>
+      <link>https://dominique.broeglin.fr/categories/monitoring/</link>
       <pubDate>Wed, 24 Nov 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/monitoring/</guid>
+      <guid>https://dominique.broeglin.fr/categories/monitoring/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Network</title>
-      <link>http://localhost:1313/categories/network/</link>
+      <link>https://dominique.broeglin.fr/categories/network/</link>
       <pubDate>Tue, 04 Oct 2011 22:53:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/network/</guid>
+      <guid>https://dominique.broeglin.fr/categories/network/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programmation</title>
-      <link>http://localhost:1313/categories/programmation/</link>
+      <link>https://dominique.broeglin.fr/categories/programmation/</link>
       <pubDate>Fri, 16 Apr 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/programmation/</guid>
+      <guid>https://dominique.broeglin.fr/categories/programmation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Protocol</title>
-      <link>http://localhost:1313/categories/protocol/</link>
+      <link>https://dominique.broeglin.fr/categories/protocol/</link>
       <pubDate>Sun, 06 Jun 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/protocol/</guid>
+      <guid>https://dominique.broeglin.fr/categories/protocol/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Puppet</title>
-      <link>http://localhost:1313/categories/puppet/</link>
+      <link>https://dominique.broeglin.fr/categories/puppet/</link>
       <pubDate>Wed, 07 Mar 2012 22:08:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/puppet/</guid>
+      <guid>https://dominique.broeglin.fr/categories/puppet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>QuickTips</title>
-      <link>http://localhost:1313/categories/quicktips/</link>
+      <link>https://dominique.broeglin.fr/categories/quicktips/</link>
       <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/quicktips/</guid>
+      <guid>https://dominique.broeglin.fr/categories/quicktips/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ruby</title>
-      <link>http://localhost:1313/categories/ruby/</link>
+      <link>https://dominique.broeglin.fr/categories/ruby/</link>
       <pubDate>Wed, 07 Mar 2012 22:08:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/ruby/</guid>
+      <guid>https://dominique.broeglin.fr/categories/ruby/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SS7</title>
-      <link>http://localhost:1313/categories/ss7/</link>
+      <link>https://dominique.broeglin.fr/categories/ss7/</link>
       <pubDate>Sun, 06 Jun 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/ss7/</guid>
+      <guid>https://dominique.broeglin.fr/categories/ss7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SSH</title>
-      <link>http://localhost:1313/categories/ssh/</link>
+      <link>https://dominique.broeglin.fr/categories/ssh/</link>
       <pubDate>Wed, 10 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/ssh/</guid>
+      <guid>https://dominique.broeglin.fr/categories/ssh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scala</title>
-      <link>http://localhost:1313/categories/scala/</link>
+      <link>https://dominique.broeglin.fr/categories/scala/</link>
       <pubDate>Fri, 16 Apr 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/scala/</guid>
+      <guid>https://dominique.broeglin.fr/categories/scala/</guid>
       <description></description>
     </item>
     
     <item>
       <title>VPN</title>
-      <link>http://localhost:1313/categories/vpn/</link>
+      <link>https://dominique.broeglin.fr/categories/vpn/</link>
       <pubDate>Wed, 10 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/vpn/</guid>
+      <guid>https://dominique.broeglin.fr/categories/vpn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vagrant</title>
-      <link>http://localhost:1313/categories/vagrant/</link>
+      <link>https://dominique.broeglin.fr/categories/vagrant/</link>
       <pubDate>Sat, 25 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/vagrant/</guid>
+      <guid>https://dominique.broeglin.fr/categories/vagrant/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vezannes</title>
-      <link>http://localhost:1313/categories/vezannes/</link>
+      <link>https://dominique.broeglin.fr/categories/vezannes/</link>
       <pubDate>Tue, 22 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/vezannes/</guid>
+      <guid>https://dominique.broeglin.fr/categories/vezannes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Virtual machine</title>
-      <link>http://localhost:1313/categories/virtual-machine/</link>
+      <link>https://dominique.broeglin.fr/categories/virtual-machine/</link>
       <pubDate>Sat, 25 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/virtual-machine/</guid>
+      <guid>https://dominique.broeglin.fr/categories/virtual-machine/</guid>
       <description></description>
     </item>
     
