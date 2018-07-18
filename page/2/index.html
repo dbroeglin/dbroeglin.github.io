@@ -57,7 +57,7 @@
 
 
 
-<meta property="og:updated_time" content="2011-10-04T22:53:00&#43;00:00"/>
+<meta property="og:updated_time" content="2012-02-25T00:00:00&#43;00:00"/>
 
 
 
@@ -156,6 +156,66 @@ window.cookieconsent.initialise({
     
       <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/2012/02/debian-wheezy-64-vagrant-base-box/">Debian Wheezy 64 Vagrant Base Box</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2012-02-25 </span>
+      <div class="post-category">
+          
+            <a href="/categories/vagrant/"> Vagrant </a>
+          
+            <a href="/categories/virtual-machine/"> Virtual machine </a>
+          
+            <a href="/categories/linux/"> Linux </a>
+          
+            <a href="/categories/debian/"> Debian </a>
+          
+        </div>
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      In the same spirit as Debian Squeeze 64 Vagrant Base Box this post describes a new Vagrant base box for Debian Wheezy. Wheezy is currently the unstable version of Debian, meaning the box is a constant work in progress. I will update this post each time the box is upgraded.
+Quickstart To get up and running you just need to:
+gem install vagrant vagrant box add wheezy64 http://dl.dropbox.com/u/937870/VMs/wheezy64.box vagrant init wheezy64 vagrant up Details The base box has the following characteristics:
+    </div>
+    <div class="read-more">
+      <a href="/2012/02/debian-wheezy-64-vagrant-base-box/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/2011/11/site-de-leglise-de-vezannes/">Site De l&#39;Eglise De Vezannes</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2011-11-22 </span>
+      <div class="post-category">
+          
+            <a href="/categories/fr/"> FR </a>
+          
+            <a href="/categories/vezannes/"> Vezannes </a>
+          
+        </div>
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Ce site relate la restauration de l&rsquo;Eglise Saint Cyr Sainte Julitte.
+    </div>
+    <div class="read-more">
+      <a href="/2011/11/site-de-leglise-de-vezannes/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    
+      <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/2011/10/rebuild-a-customized-official-debian-package/">Rebuild a Customized Official Debian Package</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2011-10-04 </span>
@@ -245,70 +305,6 @@ vagrant ssh Upgrade the OS and the tools:
     </div>
     <div class="read-more">
       <a href="/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/2011/03/debian-squeeze-64-vagrant-base-box/">Debian Squeeze 64 Vagrant Base Box</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2011-03-26 </span>
-      <div class="post-category">
-          
-            <a href="/categories/vagrant/"> Vagrant </a>
-          
-            <a href="/categories/virtual-machine/"> Virtual machine </a>
-          
-            <a href="/categories/linux/"> Linux </a>
-          
-            <a href="/categories/debian/"> Debian </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Lately I needed to test a project under Debian Squeeze 64 bit. I found several 32 bit boxes but no 64 bits. So I decided to build one of my own.
-Quickstart To get up and running you just need to:
-gem install vagrant vagrant box add squeeze64 http://dl.dropbox.com/u/937870/VMs/squeeze64.box vagrant init squeeze64 vagrant up Details The base box has the following characteristics:
- 275Mb in it&rsquo;s packaged form; 8Gb hard drive; Debian Squeeze with a linux-image-2.
-    </div>
-    <div class="read-more">
-      <a href="/2011/03/debian-squeeze-64-vagrant-base-box/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/2010/11/jmx4r--jmx-en-ruby/">JMX4R : JMX en Ruby</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2010-11-24 </span>
-      <div class="post-category">
-          
-            <a href="/categories/jmx/"> JMX </a>
-          
-            <a href="/categories/ruby/"> Ruby </a>
-          
-            <a href="/categories/monitoring/"> Monitoring </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Lorsqu&rsquo;on souhaite superviser et administrer une application Java pendant son exécution la solution qui s&rsquo;impose est JMX. Malheureusement, écrire un client JMX n&rsquo;est pas trivial. Une solution possible est l&rsquo;utilisation de JMX4R une gemme Ruby conçue dans cette optique.
-Dans le billet précédent, j&rsquo;ai présenté JMXTerm, un client JMX en ligne de commande très pratique pour accéder interactivement à JMX. Il a cependant le défaut d&rsquo;être relativement difficile et lourd à automatiser.
-    </div>
-    <div class="read-more">
-      <a href="/2010/11/jmx4r--jmx-en-ruby/" class="read-more-link">Read more..</a>
     </div>
   </div>
 </article>

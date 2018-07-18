@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>All rights reserved.</copyright>
-    <lastBuildDate>Sun, 01 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Mar 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Automated NetScaler Hyper-V Setup with PowerShell</title>
+      <link>http://localhost:1313/2017/03/automated-netscaler-hyper-v-setup-with-powershell/</link>
+      <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2017/03/automated-netscaler-hyper-v-setup-with-powershell/</guid>
+      <description>Lately, I set up quite a few NetScaler instances on my Windows 10 laptop. Usually my hypervisor of choice is VirtualBox. However, running both VirtualBox and Hyper-V is not possible on Windows 10. As, I needed Hyper-V for other reasons, I had to switch my NetScaler instances to it too.
+In my last post about setting up NetScaler on VirtualBox, I described how NetScaler can be tricked into working on VirtualBox (which is not an hypervisor supported by Citrix!</description>
+    </item>
+    
+    <item>
+      <title>Automated NetScaler VirtualBox Setup with PowerShell</title>
+      <link>http://localhost:1313/2017/02/automated-netscaler-virtualbox-setup-with-powershell/</link>
+      <pubDate>Sun, 19 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2017/02/automated-netscaler-virtualbox-setup-with-powershell/</guid>
+      <description>For a few months now, I have been working a lot with NetScaler VPX instances. As most of my personal work happens on a MacBook Pro, I was very eager to run NetScaler on VirtualBox. Here are my findings.
+As documented by Citrix, NetScaler is not directly available on VirtualBox and my previous attempts to make it work were unsuccessful. That was until a few days ago when I found this post by Esther Barthel.</description>
+    </item>
     
     <item>
       <title>Vagrant Based Windows Lab</title>
