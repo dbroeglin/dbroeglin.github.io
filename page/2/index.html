@@ -25,7 +25,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.43" />
+<meta name="generator" content="Hugo 0.44" />
 
 
 <link rel="canonical" href="http://localhost:1313/" />
@@ -57,7 +57,7 @@
 
 
 
-<meta property="og:updated_time" content="2011-03-26T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2011-10-04T22:53:00&#43;00:00"/>
 
 
 
@@ -156,6 +156,102 @@ window.cookieconsent.initialise({
     
       <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/2011/10/rebuild-a-customized-official-debian-package/">Rebuild a Customized Official Debian Package</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2011-10-04 </span>
+      <div class="post-category">
+          
+            <a href="/categories/debian/"> Debian </a>
+          
+            <a href="/categories/linux/"> Linux </a>
+          
+            <a href="/categories/network/"> Network </a>
+          
+            <a href="/categories/quicktips/"> QuickTips </a>
+          
+        </div>
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Today, I had a question about Debian package building from a member of my team which was not familiar with the Debian build system. I thought I might as well turn this into a quick tip to anybody wanting to rebuild an official Debian package with a slight change.
+To rebuild the package I&rsquo;m using a pristine Vagrant environment like the one I described in Debian Squeeze 64 Vagrant Base Box.
+    </div>
+    <div class="read-more">
+      <a href="/2011/10/rebuild-a-customized-official-debian-package/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/2011/08/utilisation-dun-vpn-bas%C3%A9-sur-openssh/">Utilisation d&#39;un VPN basé sur OpenSSH</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2011-08-10 </span>
+      <div class="post-category">
+          
+            <a href="/categories/vpn/"> VPN </a>
+          
+            <a href="/categories/ssh/"> SSH </a>
+          
+            <a href="/categories/network/"> Network </a>
+          
+        </div>
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Habituellement j&rsquo;utilise OpenVPN lorsque j&rsquo;ai besoin d&rsquo;un VPN. Cependant, sur un réseau où seul le Web et le SSH sont autorisés il peut être pratique de monter un VPN avec OpenSSH.
+La méthode présentée ici se concentre sur le montage rapide d&rsquo;un VPN ad-hoc. Le lecteur intéressé par le montage d&rsquo;un VPN dans la durée pourra se référer à Setting up a Layer 3 tunneling VPN with using OpenSSH.
+    </div>
+    <div class="read-more">
+      <a href="/2011/08/utilisation-dun-vpn-bas%C3%A9-sur-openssh/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/">Debian Squeeze 64 Vagrant Base Box Upgrade Recipe</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2011-08-09 </span>
+      <div class="post-category">
+          
+            <a href="/categories/vagrant/"> Vagrant </a>
+          
+            <a href="/categories/virtual-machine/"> Virtual machine </a>
+          
+            <a href="/categories/linux/"> Linux </a>
+          
+            <a href="/categories/debian/"> Debian </a>
+          
+        </div>
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      After building a Vagrant base box, Vagrant and Virtual Box updates incurred lots of upgrades. This article gives a recipe to do that quickly and efficiently.
+Build a new environment mkdir /tmp/upgrade cd /tmp/upgrade vagrant init squeeze64 vagrant up vagrant halt At that point the VM is stoped. Launch it from the Virtual Box GUI and mount the guest tools (Host+D).
+Upgrade Log into the VM through vagrant:
+vagrant ssh Upgrade the OS and the tools:
+    </div>
+    <div class="read-more">
+      <a href="/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    
+      <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/2011/03/debian-squeeze-64-vagrant-base-box/">Debian Squeeze 64 Vagrant Base Box</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2011-03-26 </span>
@@ -218,94 +314,6 @@ Dans le billet précédent, j&rsquo;ai présenté JMXTerm, un client JMX en lign
 </article>
 
     
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/2010/11/jmxterm--jmx-en-ligne-de-commande/">JMXTerm : JMX en ligne de commande</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2010-11-13 </span>
-      <div class="post-category">
-          
-            <a href="/categories/jmx/"> JMX </a>
-          
-            <a href="/categories/monitoring/"> Monitoring </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Il est parfois utile de pouvoir consulter les informations de supervision d&rsquo;une machine virtuelle Java qui s&rsquo;exécute sur un serveur distant. Malheureusement, l&rsquo;agent JMX n&rsquo;est pas toujours configuré pour un accès distant ou cet accès distant est difficile du fait de la topologie réseau.
-Si le JDK est installé sur la machine distante, il est toujours possible de se connecter au serveur en faisant suivre une session X et de lancer un jconsole directement sur le serveur :
-    </div>
-    <div class="read-more">
-      <a href="/2010/11/jmxterm--jmx-en-ligne-de-commande/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/2010/06/analyser-des-paquets-isup-avec-wireshark/">Analyser des paquets ISUP avec Wireshark</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2010-06-06 </span>
-      <div class="post-category">
-          
-            <a href="/categories/ruby/"> Ruby </a>
-          
-            <a href="/categories/protocol/"> Protocol </a>
-          
-            <a href="/categories/ss7/"> SS7 </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Il y a quelques temps j&rsquo;ai eu à analyser des journaux contenant des messages ISUP avec Wireshark. L&rsquo;opération n&rsquo;est pas triviale, mais une fois comprise elle est relativement simple à mettre en oeuvre dans un script. Le suite de cette article décrit les étapes nécessaires à la transformation d&rsquo;un message MTP en un message SIGTRAN pour permettre son analyse par Wireshark.
-Le décor Wireshark est sans aucun doute le plus connu et le plus complet des outils d&rsquo;analyse de trafic libres.
-    </div>
-    <div class="read-more">
-      <a href="/2010/06/analyser-des-paquets-isup-avec-wireshark/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/2010/04/scala-days-2010/">Scala Days 2010</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2010-04-16 </span>
-      <div class="post-category">
-          
-            <a href="/categories/scala/"> Scala </a>
-          
-            <a href="/categories/programmation/"> Programmation </a>
-          
-            <a href="/categories/dsl/"> DSL </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Les 15 et 16 avril 2010 j&rsquo;ai eu la chance d&rsquo;assister aux Scala Days à Lausanne (Suisse). Il s&rsquo;agissait d&rsquo;une conférence autour du langage de programmation multi-paradigme Scala, ses applications et son futur.
-Scala est un langage de programmation conçu à l&rsquo;École Polytechnique Fédérale de Lausanne. Il intègre les paradigmes de programmation fonctionnelle avec ceux de la programmation orientée objet. Son typage est statique mais le système d&rsquo;inférence de types du compilateur permet de se passer, dans un grand nombre de cas, de la lourdeur habituellement imposée par cette catégorie de langages.
-    </div>
-    <div class="read-more">
-      <a href="/2010/04/scala-days-2010/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
   </section>
   
   <nav class="pagination">
@@ -315,6 +323,10 @@ Scala est un langage de programmation conçu à l&rsquo;École Polytechnique Fé
         <span class="prev-text">Prev</span>
       </a>
     
+      <a class="next" href="/page/3/">
+        <span class="next-text">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
   </nav>
 
         </div>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Vagrant Based Windows Lab - Dom&#39;s Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Dominique Broeglin" />
+  <meta name="description" content="Having a lab handy is a tremendous help when learning Windows administration. This post goes through an easy way to setup your own lab with Vagrant and Packer.
+Update: I used this lab quite a bit since this post and did quite a bit of improvements. Most things remain correct but you will, for instance, have to replace eval-win2012r2-standard-ssh-nocm-1.0.4 with eval-win2012r2-standard-nocm-1.0.4 in the following examples for the lab to work." />
+
+  <meta name="keywords" content="Dominique, Broeglin, Blog" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.44" />
+
+
+<link rel="canonical" href="http://localhost:1313/2015/11/vagrant-based-windows-lab/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.2.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="Vagrant Based Windows Lab" />
+<meta property="og:description" content="Having a lab handy is a tremendous help when learning Windows administration. This post goes through an easy way to setup your own lab with Vagrant and Packer.
+Update: I used this lab quite a bit since this post and did quite a bit of improvements. Most things remain correct but you will, for instance, have to replace eval-win2012r2-standard-ssh-nocm-1.0.4 with eval-win2012r2-standard-nocm-1.0.4 in the following examples for the lab to work." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/2015/11/vagrant-based-windows-lab/" />
+
+
+
+<meta property="article:published_time" content="2015-11-01T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2015-11-01T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Vagrant Based Windows Lab">
+<meta itemprop="description" content="Having a lab handy is a tremendous help when learning Windows administration. This post goes through an easy way to setup your own lab with Vagrant and Packer.
+Update: I used this lab quite a bit since this post and did quite a bit of improvements. Most things remain correct but you will, for instance, have to replace eval-win2012r2-standard-ssh-nocm-1.0.4 with eval-win2012r2-standard-nocm-1.0.4 in the following examples for the lab to work.">
+
+
+<meta itemprop="datePublished" content="2015-11-01T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2015-11-01T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="562">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vagrant Based Windows Lab"/>
+<meta name="twitter:description" content="Having a lab handy is a tremendous help when learning Windows administration. This post goes through an easy way to setup your own lab with Vagrant and Packer.
+Update: I used this lab quite a bit since this post and did quite a bit of improvements. Most things remain correct but you will, for instance, have to replace eval-win2012r2-standard-ssh-nocm-1.0.4 with eval-win2012r2-standard-nocm-1.0.4 in the following examples for the lab to work."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eb6c44",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#f5d948"
+    }
+  }
+})});
+</script>
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Dom&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Dom&#39;s Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Vagrant Based Windows Lab</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2015-11-01 </span>
+        
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#packer">Packer</a></li>
+<li><a href="#vagrant">Vagrant</a></li>
+<li><a href="#setting-up-active-directory">Setting up Active Directory</a></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<p><em>Having a lab handy is a tremendous help when learning Windows
+ administration. This post goes through an easy way to setup your own
+ lab with Vagrant and Packer.</em></p>
+
+<p><strong>Update:</strong> I used this lab quite a bit since this post and did quite a bit of
+improvements. Most things remain correct but you will, for instance, have to
+replace <code>eval-win2012r2-standard-ssh-nocm-1.0.4</code> with <code>eval-win2012r2-standard-nocm-1.0.4</code>
+in the following examples for the lab to work. Please, refer to the github repository
+for details.</p>
+
+<p>Even if, nowadays, it is fairly easy to setup a Windows Lab on various cloud
+providers, doing it by oneself is the best way to learn. However, it can
+quickly get time consuming. This post describes how Vagrant sets up
+automatically a new lab on my laptop each time I need to try something on
+a windows infrastructure.</p>
+
+<h1 id="packer">Packer</h1>
+
+<p><a href="https://www.packer.io/">Packer</a> by Hashicorp is a tool for automated creation of machines and
+container images. It can do so for various target platforms. In the following
+lines we are going to create Windows machines targeted at VirtualBox.</p>
+
+<p>The aforementioned site extensively documents how Packer works. However,
+automatic creation of a Windows machine is not an easy task. For those interrested
+the following post will walk you through the process of
+<a href="http://www.hurryupandwait.io/blog/creating-windows-base-images-for-virtualbox-and-hyper-v-using-packer-boxstarter-and-vagrant">creating a Windows base image</a>.</p>
+
+<p>Because creating the base images is not the subject of this post we will take a
+shortcut and use packer definitions from the <a href="https://atlas.hashicorp.com/boxcutter">Boxcutter</a> project which
+contains community-driven templates for most common OSes.
+After installing Packer (on the Mac, with brew, you can use <code>brew install packer</code>)
+execute the following commands:</p>
+
+<p>{% highlight bash %}
+git clone git@github.com:boxcutter/windows.git boxcutter-windows
+cd boxcutter-windows
+make virtualbox/eval-win2012r2-standard-ssh
+{% endhighlight %}</p>
+
+<p>This will take quite a bit of time: download the Windows evaluation ISO and then
+prepare, cleanup and package a VirtualBox base image.</p>
+
+<h1 id="vagrant">Vagrant</h1>
+
+<p>After having installed Vagrant, go in the boxcutter directory mentioned above
+and execute:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vagrant box add --provider virtualbox <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>       --name eval-win2012r2-standard-ssh-nocm-1.0.4 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>       -f box/virtualbox/eval-win2012r2-standard-ssh-nocm-1.0.4.box</code></pre></div>
+
+<p>Then in your <code>Vagrantfile</code> add the following definitions:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>define <span style="color:#e6db74">&#34;dc&#34;</span> <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>config<span style="color:#f92672">|</span>
+  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>box <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;eval-win2012r2-standard-ssh-nocm-1.0.4&#34;</span>
+  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>network <span style="color:#e6db74">&#34;private_network&#34;</span>, <span style="color:#e6db74">ip</span>: <span style="color:#e6db74">&#34;192.168.100.10&#34;</span>
+<span style="color:#66d9ef">end</span>
+
+config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>define <span style="color:#e6db74">&#34;client&#34;</span> <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>config<span style="color:#f92672">|</span>
+  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>box <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;eval-win2012r2-standard-ssh-nocm-1.0.4&#34;</span>
+  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>network <span style="color:#e6db74">&#34;private_network&#34;</span>, <span style="color:#e6db74">ip</span>: <span style="color:#e6db74">&#34;192.168.100.11&#34;</span>
+<span style="color:#66d9ef">end</span></code></pre></div></p>
+
+<p>The purpose of the <code>private_network</code> interface is to allow
+the boxes to both have fixed IP addresses (better for the <em>DC</em>) and to communicate
+directly with the host system. The NATed interfaces will allow the VMs to communicate
+with the rest of the world.</p>
+
+<p>After executing:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vagrant up</code></pre></div>
+and going for a lengthy coffee, you should have two VMs running called respectively
+<em>dc</em> and <em>client</em>.</p>
+
+<p>The <em>dc</em> VM is provisionned as a <em>domain controller</em>. The provisioning part
+happens because of the following configuration in the <code>Vagrantfile</code>:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>define <span style="color:#e6db74">&#34;dc&#34;</span> <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>config<span style="color:#f92672">|</span>
+    <span style="color:#75715e"># ...</span>
+    config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>provision <span style="color:#e6db74">&#34;shell&#34;</span>, <span style="color:#e6db74">path</span>: <span style="color:#e6db74">&#34;provision/00_admin_password.ps1&#34;</span>
+    config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>provision <span style="color:#e6db74">&#34;shell&#34;</span>, <span style="color:#e6db74">path</span>: <span style="color:#e6db74">&#34;provision/01_install_AD.ps1&#34;</span>
+    config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>provision <span style="color:#e6db74">&#34;shell&#34;</span>, <span style="color:#e6db74">path</span>: <span style="color:#e6db74">&#34;provision/02_install_forest.ps1&#34;</span>
+  <span style="color:#66d9ef">end</span></code></pre></div>
+
+<p>A similar block is used for the client:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>define <span style="color:#e6db74">&#34;client&#34;</span> <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>config<span style="color:#f92672">|</span>
+    <span style="color:#75715e"># ...</span>
+    config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>provision <span style="color:#e6db74">&#34;shell&#34;</span>, <span style="color:#e6db74">path</span>: <span style="color:#e6db74">&#34;provision/06_client_setup.ps1&#34;</span>
+  <span style="color:#66d9ef">end</span></code></pre></div>
+
+<h1 id="setting-up-active-directory">Setting up Active Directory</h1>
+
+<p>After setting up the VM with a blank Windows system we do the following:</p>
+
+<ol>
+<li><code>00_admin_password.ps1</code>: set the administrator password to <code>Passw0rd</code>.</li>
+<li><code>01_install_AD.ps1</code> : install the various required features for Active Directory.</li>
+<li><code>02_install_forest.ps1</code> : actually install the AD Forest.</li>
+</ol>
+
+<p>On the client side the <code>06_client_setup.ps1</code> provisioning script will just setup DNS
+and join the <code>client</code> virtual machine to the newly created domain.</p>
+
+<p>That is all we have for today, the actual Vagrant project can be found at
+<a href="https://github.com/dbroeglin/windows-lab">https://github.com/dbroeglin/windows-lab</a></p>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Dominique Broeglin</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2015-11-01</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/2012/12/automating-eclipse-tasks-through-eclim/">
+            <span class="next-text nav-default">Automating Eclipse tasks through Eclim</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'dominiquebroeglin';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2010 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">All rights reserved.</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+
+
+<script type="text/javascript" src="/dist/even.min.js?v=3.2.0"></script>
+
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-16180637-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>

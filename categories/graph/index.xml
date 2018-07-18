@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graph on Dom&#39;s Blog</title>
+    <link>http://localhost:1313/categories/graph/</link>
+    <description>Recent content in Graph on Dom&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>All rights reserved.</copyright>
+    <lastBuildDate>Wed, 07 Mar 2012 22:08:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/graph/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Ruby to find a cycle in a graph of Puppet dependencies</title>
+      <link>http://localhost:1313/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</link>
+      <pubDate>Wed, 07 Mar 2012 22:08:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</guid>
+      <description>Today, I had a small issue while using Puppet. To make it quick: I got a circular dependency in my Puppet recipes and Puppet failed with a verbose but not so helpful message:
+err: Could not apply complete catalog: Found dependency cycles in the following relationships: User[root] =&amp;gt; File[/usr/share/locale/locale.alias], Package[python-setuptools] ... # INSERT TONS of other dependencies here ... try using the &amp;#39;--graph&amp;#39; option and open the &amp;#39;.dot&amp;#39; files in OmniGraffle or GraphViz Of course, I tried the &amp;lsquo;&amp;ndash;graph&amp;rsquo; option but, due to it&amp;rsquo;s size, the generated diagram was anything but readable.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,10 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>All rights reserved.</copyright>
-    <lastBuildDate>Sat, 25 Feb 2012 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vagrant Based Windows Lab</title>
+      <link>http://localhost:1313/2015/11/vagrant-based-windows-lab/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/11/vagrant-based-windows-lab/</guid>
+      <description>Having a lab handy is a tremendous help when learning Windows administration. This post goes through an easy way to setup your own lab with Vagrant and Packer.
+Update: I used this lab quite a bit since this post and did quite a bit of improvements. Most things remain correct but you will, for instance, have to replace eval-win2012r2-standard-ssh-nocm-1.0.4 with eval-win2012r2-standard-nocm-1.0.4 in the following examples for the lab to work.</description>
+    </item>
+    
+    <item>
+      <title>Automating Eclipse tasks through Eclim</title>
+      <link>http://localhost:1313/2012/12/automating-eclipse-tasks-through-eclim/</link>
+      <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/12/automating-eclipse-tasks-through-eclim/</guid>
+      <description>Lately my day to day work included developing applications with the Play! framework. Play!, in both its 1.x and 2.x versions, is a great framework but its integration with Eclipse is not always easy. One of the most frequent irritant I had, was having to use of dreaded play eclipsify command which helpfully states:
+$ play eclipsify ~ _ _ ~ _ __ | | __ _ _ _| | ~ | &amp;#39;_ \| |/ _&amp;#39; | || |_| ~ | __/|_|\____|\__ (_) ~ |_| |__/ ~ ~ play!</description>
+    </item>
+    
+    <item>
+      <title>Using Ruby to find a cycle in a graph of Puppet dependencies</title>
+      <link>http://localhost:1313/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</link>
+      <pubDate>Wed, 07 Mar 2012 22:08:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</guid>
+      <description>Today, I had a small issue while using Puppet. To make it quick: I got a circular dependency in my Puppet recipes and Puppet failed with a verbose but not so helpful message:
+err: Could not apply complete catalog: Found dependency cycles in the following relationships: User[root] =&amp;gt; File[/usr/share/locale/locale.alias], Package[python-setuptools] ... # INSERT TONS of other dependencies here ... try using the &amp;#39;--graph&amp;#39; option and open the &amp;#39;.dot&amp;#39; files in OmniGraffle or GraphViz Of course, I tried the &amp;lsquo;&amp;ndash;graph&amp;rsquo; option but, due to it&amp;rsquo;s size, the generated diagram was anything but readable.</description>
+    </item>
     
     <item>
       <title>Debian Wheezy 64 Vagrant Base Box</title>

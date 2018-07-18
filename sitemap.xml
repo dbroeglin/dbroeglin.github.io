@@ -3,6 +3,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://localhost:1313/2015/11/vagrant-based-windows-lab/</loc>
+    <lastmod>2015-11-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2012/12/automating-eclipse-tasks-through-eclim/</loc>
+    <lastmod>2012-12-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/</loc>
+    <lastmod>2012-03-07T22:08:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/2012/02/debian-wheezy-64-vagrant-base-box/</loc>
     <lastmod>2012-02-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -94,7 +115,7 @@
   
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2012-02-25T00:00:00+00:00</lastmod>
+    <lastmod>2015-11-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -102,6 +123,13 @@
   <url>
     <loc>http://localhost:1313/categories/fr/</loc>
     <lastmod>2011-11-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/graph/</loc>
+    <lastmod>2012-03-07T22:08:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -136,7 +164,7 @@
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2012-02-25T00:00:00+00:00</lastmod>
+    <lastmod>2015-11-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -156,15 +184,22 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/categories/puppet/</loc>
+    <lastmod>2012-03-07T22:08:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/categories/quicktips/</loc>
-    <lastmod>2011-10-04T22:53:00+00:00</lastmod>
+    <lastmod>2012-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/categories/ruby/</loc>
-    <lastmod>2010-11-24T00:00:00+00:00</lastmod>
+    <lastmod>2012-03-07T22:08:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

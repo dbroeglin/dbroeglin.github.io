@@ -39,6 +39,15 @@
     </item>
     
     <item>
+      <title>Graph</title>
+      <link>http://localhost:1313/categories/graph/</link>
+      <pubDate>Wed, 07 Mar 2012 22:08:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/graph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>JMX</title>
       <link>http://localhost:1313/categories/jmx/</link>
       <pubDate>Wed, 24 Nov 2010 00:00:00 +0000</pubDate>
@@ -93,9 +102,18 @@
     </item>
     
     <item>
+      <title>Puppet</title>
+      <link>http://localhost:1313/categories/puppet/</link>
+      <pubDate>Wed, 07 Mar 2012 22:08:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/puppet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>QuickTips</title>
       <link>http://localhost:1313/categories/quicktips/</link>
-      <pubDate>Tue, 04 Oct 2011 22:53:00 +0000</pubDate>
+      <pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/categories/quicktips/</guid>
       <description></description>
@@ -104,7 +122,7 @@
     <item>
       <title>Ruby</title>
       <link>http://localhost:1313/categories/ruby/</link>
-      <pubDate>Wed, 24 Nov 2010 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Mar 2012 22:08:00 +0000</pubDate>
       
       <guid>http://localhost:1313/categories/ruby/</guid>
       <description></description>

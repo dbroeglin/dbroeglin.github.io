@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Automating Eclipse tasks through Eclim - Dom&#39;s Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Dominique Broeglin" />
+  <meta name="description" content="Lately my day to day work included developing applications with the Play! framework. Play!, in both its 1.x and 2.x versions, is a great framework but its integration with Eclipse is not always easy. One of the most frequent irritant I had, was having to use of dreaded play eclipsify command which helpfully states:
+$ play eclipsify ~ _ _ ~ _ __ | | __ _ _ _| | ~ | &amp;#39;_ \| |/ _&amp;#39; | || |_| ~ | __/|_|\____|\__ (_) ~ |_| |__/ ~ ~ play!" />
+
+  <meta name="keywords" content="Dominique, Broeglin, Blog" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.44" />
+
+
+<link rel="canonical" href="http://localhost:1313/2012/12/automating-eclipse-tasks-through-eclim/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.2.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="Automating Eclipse tasks through Eclim" />
+<meta property="og:description" content="Lately my day to day work included developing applications with the Play! framework. Play!, in both its 1.x and 2.x versions, is a great framework but its integration with Eclipse is not always easy. One of the most frequent irritant I had, was having to use of dreaded play eclipsify command which helpfully states:
+$ play eclipsify ~ _ _ ~ _ __ | | __ _ _ _| | ~ | &#39;_ \| |/ _&#39; | || |_| ~ | __/|_|\____|\__ (_) ~ |_| |__/ ~ ~ play!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/2012/12/automating-eclipse-tasks-through-eclim/" />
+
+
+
+<meta property="article:published_time" content="2012-12-31T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2012-12-31T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Automating Eclipse tasks through Eclim">
+<meta itemprop="description" content="Lately my day to day work included developing applications with the Play! framework. Play!, in both its 1.x and 2.x versions, is a great framework but its integration with Eclipse is not always easy. One of the most frequent irritant I had, was having to use of dreaded play eclipsify command which helpfully states:
+$ play eclipsify ~ _ _ ~ _ __ | | __ _ _ _| | ~ | &#39;_ \| |/ _&#39; | || |_| ~ | __/|_|\____|\__ (_) ~ |_| |__/ ~ ~ play!">
+
+
+<meta itemprop="datePublished" content="2012-12-31T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2012-12-31T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="429">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Automating Eclipse tasks through Eclim"/>
+<meta name="twitter:description" content="Lately my day to day work included developing applications with the Play! framework. Play!, in both its 1.x and 2.x versions, is a great framework but its integration with Eclipse is not always easy. One of the most frequent irritant I had, was having to use of dreaded play eclipsify command which helpfully states:
+$ play eclipsify ~ _ _ ~ _ __ | | __ _ _ _| | ~ | &#39;_ \| |/ _&#39; | || |_| ~ | __/|_|\____|\__ (_) ~ |_| |__/ ~ ~ play!"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eb6c44",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#f5d948"
+    }
+  }
+})});
+</script>
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Dom&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Dom&#39;s Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Automating Eclipse tasks through Eclim</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2012-12-31 </span>
+        <div class="post-category">
+            
+              <a href="/categories/quicktips/"> QuickTips </a>
+            
+          </div>
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    
+  </div>
+</div>
+
+    
+    
+
+    
+    <div class="post-content">
+      <p>Lately my day to day work included developing applications with the <a href="http://playframework.org">Play! framework</a>. Play!,
+in both its 1.x and 2.x versions, is a great framework but its integration with Eclipse is not always easy.
+One of the most frequent irritant I had, was having to use of dreaded <em>play eclipsify</em> command which helpfully states:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-none" data-lang="none">$ play eclipsify
+~        _            _ 
+~  _ __ | | __ _ _  _| |
+~ | &#39;_ \| |/ _&#39; | || |_|
+~ |  __/|_|\____|\__ (_)
+~ |_|            |__/   
+~
+~ play! 1.2.5, http://www.playframework.org
+~
+~ OK, the application is ready for eclipse
+~ Use File/Import/General/Existing project to import /Users/dom/Sources/play-ground into eclipse
+~
+~ Use eclipsify again when you want to update eclipse configuration files.
+~ However, it&#39;s often better to delete and re-import the project into your workspace since eclipse keeps dirty caches...
+~</code></pre></div>
+
+<p>The key phrase being «&hellip;it&rsquo;s often better to delete and re-import the project
+into your workspace since eclipse keeps dirty caches&hellip;».  Unfortunately, it is
+better to heed this piece of advise. However, if you work with several external
+libraries whose version numbers change on a frequent basis, it can quickly
+become quite annoying to do all this mouse work. Especially, if you trained
+yourself for years to do most of your tasks by using the keyboard or some sort
+of automation.</p>
+
+<p>This is where <a href="http://eclim.org">Eclim</a> can help! Eclim is an integration layer between Eclipse and VIM.
+You can both use vim inside Eclipse or use some cherry-picked features of Eclipse from VIM. I&rsquo;m not yet
+at the point where I would use VIM to develop Java applications, if ever, and I&rsquo;m not suggesting you to
+switch from Eclipse to VIM either. However, the API used by the VIM plugin to communicate with it&rsquo;s
+Eclipse counterpart is a handy entry point into Eclipse automation.</p>
+
+<p>After some digging around I found out that Eclim comes with an <em>eclim</em> command which, in turn, accepts commands
+to be sent to Eclipse running an <em>eclimd</em> server. I will not enter  here into the details of how Eclim
+works but it was quite easy to put together this simple script:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">play eclipsify <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#e6db74">${</span>ECLIPSE_HOME<span style="color:#e6db74">}</span>/eclim -command project_delete -p <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>basename <span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">))</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#e6db74">${</span>ECLIPSE_HOME<span style="color:#e6db74">}</span>/eclim -command project_import -f <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span></code></pre></div>
+
+<p>The script basically executes <em>eclipsify</em> then deletes the project whose name is the name of the
+current directory and then reimports the project from the current directory. The <code>ECLIPSE_HOME</code>
+variable should contain the location of your Eclipse enhanced with Eclim.</p>
+
+<p>Installing <em>Eclim</em> is a breeze if you <a href="http://eclim.org/install.html">follow those steps</a>.</p>
+
+<p>Have fun automating your Eclipse work!</p>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Dominique Broeglin</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2012-12-31</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/2015/11/vagrant-based-windows-lab/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Vagrant Based Windows Lab</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/">
+            <span class="next-text nav-default">Using Ruby to find a cycle in a graph of Puppet dependencies</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'dominiquebroeglin';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2010 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">All rights reserved.</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+
+
+<script type="text/javascript" src="/dist/even.min.js?v=3.2.0"></script>
+
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-16180637-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>

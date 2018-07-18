@@ -25,7 +25,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.43" />
+<meta name="generator" content="Hugo 0.44" />
 
 
 <link rel="canonical" href="http://localhost:1313/" />
@@ -57,7 +57,7 @@
 
 
 
-<meta property="og:updated_time" content="2012-02-25T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2015-11-01T00:00:00&#43;00:00"/>
 
 
 
@@ -156,6 +156,86 @@ window.cookieconsent.initialise({
     
       <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/2015/11/vagrant-based-windows-lab/">Vagrant Based Windows Lab</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2015-11-01 </span>
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Having a lab handy is a tremendous help when learning Windows administration. This post goes through an easy way to setup your own lab with Vagrant and Packer.
+Update: I used this lab quite a bit since this post and did quite a bit of improvements. Most things remain correct but you will, for instance, have to replace eval-win2012r2-standard-ssh-nocm-1.0.4 with eval-win2012r2-standard-nocm-1.0.4 in the following examples for the lab to work.
+    </div>
+    <div class="read-more">
+      <a href="/2015/11/vagrant-based-windows-lab/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/2012/12/automating-eclipse-tasks-through-eclim/">Automating Eclipse tasks through Eclim</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2012-12-31 </span>
+      <div class="post-category">
+          
+            <a href="/categories/quicktips/"> QuickTips </a>
+          
+        </div>
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Lately my day to day work included developing applications with the Play! framework. Play!, in both its 1.x and 2.x versions, is a great framework but its integration with Eclipse is not always easy. One of the most frequent irritant I had, was having to use of dreaded play eclipsify command which helpfully states:
+$ play eclipsify ~ _ _ ~ _ __ | | __ _ _ _| | ~ | &#39;_ \| |/ _&#39; | || |_| ~ | __/|_|\____|\__ (_) ~ |_| |__/ ~ ~ play!
+    </div>
+    <div class="read-more">
+      <a href="/2012/12/automating-eclipse-tasks-through-eclim/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/">Using Ruby to find a cycle in a graph of Puppet dependencies</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2012-03-07 </span>
+      <div class="post-category">
+          
+            <a href="/categories/ruby/"> Ruby </a>
+          
+            <a href="/categories/quicktips/"> QuickTips </a>
+          
+            <a href="/categories/graph/"> Graph </a>
+          
+            <a href="/categories/puppet/"> Puppet </a>
+          
+        </div>
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Today, I had a small issue while using Puppet. To make it quick: I got a circular dependency in my Puppet recipes and Puppet failed with a verbose but not so helpful message:
+err: Could not apply complete catalog: Found dependency cycles in the following relationships: User[root] =&gt; File[/usr/share/locale/locale.alias], Package[python-setuptools] ... # INSERT TONS of other dependencies here ... try using the &#39;--graph&#39; option and open the &#39;.dot&#39; files in OmniGraffle or GraphViz Of course, I tried the &lsquo;&ndash;graph&rsquo; option but, due to it&rsquo;s size, the generated diagram was anything but readable.
+    </div>
+    <div class="read-more">
+      <a href="/2012/03/using-ruby-to-find-a-cycle-in-a-graph-of-puppet-dependencies/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    
+      <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/2012/02/debian-wheezy-64-vagrant-base-box/">Debian Wheezy 64 Vagrant Base Box</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2012-02-25 </span>
@@ -209,102 +289,6 @@ gem install vagrant vagrant box add wheezy64 http://dl.dropbox.com/u/937870/VMs/
     </div>
     <div class="read-more">
       <a href="/2011/11/site-de-leglise-de-vezannes/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/2011/10/rebuild-a-customized-official-debian-package/">Rebuild a Customized Official Debian Package</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2011-10-04 </span>
-      <div class="post-category">
-          
-            <a href="/categories/debian/"> Debian </a>
-          
-            <a href="/categories/linux/"> Linux </a>
-          
-            <a href="/categories/network/"> Network </a>
-          
-            <a href="/categories/quicktips/"> QuickTips </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Today, I had a question about Debian package building from a member of my team which was not familiar with the Debian build system. I thought I might as well turn this into a quick tip to anybody wanting to rebuild an official Debian package with a slight change.
-To rebuild the package I&rsquo;m using a pristine Vagrant environment like the one I described in Debian Squeeze 64 Vagrant Base Box.
-    </div>
-    <div class="read-more">
-      <a href="/2011/10/rebuild-a-customized-official-debian-package/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/2011/08/utilisation-dun-vpn-bas%C3%A9-sur-openssh/">Utilisation d&#39;un VPN basé sur OpenSSH</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2011-08-10 </span>
-      <div class="post-category">
-          
-            <a href="/categories/vpn/"> VPN </a>
-          
-            <a href="/categories/ssh/"> SSH </a>
-          
-            <a href="/categories/network/"> Network </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Habituellement j&rsquo;utilise OpenVPN lorsque j&rsquo;ai besoin d&rsquo;un VPN. Cependant, sur un réseau où seul le Web et le SSH sont autorisés il peut être pratique de monter un VPN avec OpenSSH.
-La méthode présentée ici se concentre sur le montage rapide d&rsquo;un VPN ad-hoc. Le lecteur intéressé par le montage d&rsquo;un VPN dans la durée pourra se référer à Setting up a Layer 3 tunneling VPN with using OpenSSH.
-    </div>
-    <div class="read-more">
-      <a href="/2011/08/utilisation-dun-vpn-bas%C3%A9-sur-openssh/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/">Debian Squeeze 64 Vagrant Base Box Upgrade Recipe</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2011-08-09 </span>
-      <div class="post-category">
-          
-            <a href="/categories/vagrant/"> Vagrant </a>
-          
-            <a href="/categories/virtual-machine/"> Virtual machine </a>
-          
-            <a href="/categories/linux/"> Linux </a>
-          
-            <a href="/categories/debian/"> Debian </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      After building a Vagrant base box, Vagrant and Virtual Box updates incurred lots of upgrades. This article gives a recipe to do that quickly and efficiently.
-Build a new environment mkdir /tmp/upgrade cd /tmp/upgrade vagrant init squeeze64 vagrant up vagrant halt At that point the VM is stoped. Launch it from the Virtual Box GUI and mount the guest tools (Host+D).
-Upgrade Log into the VM through vagrant:
-vagrant ssh Upgrade the OS and the tools:
-    </div>
-    <div class="read-more">
-      <a href="/2011/08/debian-squeeze-64-vagrant-base-box-upgrade-recipe/" class="read-more-link">Read more..</a>
     </div>
   </div>
 </article>
